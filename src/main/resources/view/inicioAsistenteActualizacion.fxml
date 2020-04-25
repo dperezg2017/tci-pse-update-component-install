@@ -29,14 +29,12 @@
             <Font name="Calibri" size="20.0" />
          </font>
       </Label>
-      <Label layoutX="176.0" layoutY="58.0" text="componente POS">
+      <Label layoutX="176.0" layoutY="58.0" text="componente Update POS">
          <font>
             <Font name="Calibri" size="20.0" />
          </font>
       </Label>
-      <Label layoutX="198.0" layoutY="100.0" text="No Existe">
-      </Label>
-      <Label layoutX="198.0" layoutY="133.0" text="Vérsion anterior:">
+      <Label layoutX="198.0" layoutY="133.0" text="Version instalada:">
       </Label>
       <Label layoutX="176.0" layoutY="256.0" text="Para continuar con la instalación haga clic en &quot;Siguiente&quot; para continuar.">
          <font>

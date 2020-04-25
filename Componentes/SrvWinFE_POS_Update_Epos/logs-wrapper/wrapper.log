@@ -1,0 +1,18 @@
+STATUS | wrapperm | 2020/04/22 21:45:28 | SrvWinFE - POS Modulo Servidor service installed.
+STATUS | wrapper  | 2020/04/22 21:56:39 | --> Wrapper Started as Service
+STATUS | wrapper  | 2020/04/22 21:56:39 | Java Service Wrapper Community Edition 32-bit 3.5.26
+STATUS | wrapper  | 2020/04/22 21:56:39 |   Copyright (C) 1999-2014 Tanuki Software, Ltd. All Rights Reserved.
+STATUS | wrapper  | 2020/04/22 21:56:39 |     http://wrapper.tanukisoftware.com
+STATUS | wrapper  | 2020/04/22 21:56:39 | 
+STATUS | wrapper  | 2020/04/22 21:56:39 | Launching a JVM...
+INFO   | jvm 1    | 2020/04/22 21:56:40 | WrapperManager: Initializing...
+STATUS | wrapper  | 2020/04/23 01:15:24 | Machine is shutting down.
+STATUS | wrapper  | 2020/04/23 01:15:26 | <-- Wrapper Stopped
+STATUS | wrapper  | 2020/04/23 08:32:13 | --> Wrapper Started as Service
+STATUS | wrapper  | 2020/04/23 08:32:13 | Java Service Wrapper Community Edition 32-bit 3.5.26
+STATUS | wrapper  | 2020/04/23 08:32:13 |   Copyright (C) 1999-2014 Tanuki Software, Ltd. All Rights Reserved.
+STATUS | wrapper  | 2020/04/23 08:32:13 |     http://wrapper.tanukisoftware.com
+STATUS | wrapper  | 2020/04/23 08:32:13 | 
+STATUS | wrapper  | 2020/04/23 08:32:14 | Launching a JVM...
+INFO   | jvm 1    | 2020/04/23 08:32:14 | WrapperManager: Initializing...
+STATUS | wrapper  | 2020/04/23 10:27:44 | <-- Wrapper Stopped

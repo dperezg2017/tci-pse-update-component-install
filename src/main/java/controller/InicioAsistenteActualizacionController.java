@@ -14,12 +14,6 @@ import util.Utilitario;
 
 import java.util.regex.Pattern;
 
-
-/**
- * @author: Deyviz Perez
- * @version: 1.0
- * @detail: Controlador, de la primera pagina, donde se puede verificar las versiones instaladar y a actualizar
- **/
 public class InicioAsistenteActualizacionController {
 
     Logger logger = Logger.getLogger(InicioAsistenteActualizacionController.class);
@@ -146,7 +140,7 @@ public class InicioAsistenteActualizacionController {
     }
 
     public String versionActualizadorPOS() {
-        String ubicacionActualizadorServidor = utilitario.conocerRutaVersionActualizador(constante.SERVICIO_POS_SERVER);
+        String ubicacionActualizadorServidor = utilitario.conocerRutaVersionActualizador(constante.SERVICIO_POS_UPDATE_EPOS);
         String versionActualizador = utilitario.versionPOS(ubicacionActualizadorServidor);
         return versionActualizador;
     }

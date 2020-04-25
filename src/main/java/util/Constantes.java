@@ -14,12 +14,13 @@ public class Constantes {
 //    public static final String RUTA_NOMBRE_TEST_IDE_VERSION_COMPONENTE_SERVER="Asistente de Actualización POS\\Componentes\\SrvWinFE_POS_Modulo_Servidor\\lib\\config";
 
     /*dperezc: test en el IDE*/
-    public static final String RUTA_NOMBRE_TEST_IDE_RAIZ="ActualizadorEpos";
-    public static final String RUTA_NOMBRE_TEST_IDE_RAIZ_COMPONENTE_PRINTMANAGER="ActualizadorEpos\\Componentes\\SrvWinFE_POS_Plugin_Rep_Impresa";
-    public static final String RUTA_NOMBRE_TEST_IDE_RAIZ_COMPONENTE_SERVER="ActualizadorEpos\\Componentes\\SrvWinFE_POS_Modulo_Servidor";
-    public static final String RUTA_NOMBRE_TEST_IDE_RAIZ_COMPONENTE_BD="ActualizadorEpos\\Componentes\\SrvWinFE_POS_Modulo_BD";
-    public static final String RUTA_NOMBRE_TEST_IDE_RAIZ_COMPONENTE_CLIENTE="ActualizadorEpos\\Componentes\\SrvWinFE_POS_Modulo_Cliente";
-    public static final String RUTA_NOMBRE_TEST_IDE_VERSION_COMPONENTE_SERVER="ActualizadorEpos\\Componentes\\SrvWinFE_POS_Modulo_Servidor\\lib\\config";
+    public static final String RUTA_NOMBRE_TEST_IDE_RAIZ="tci-pse-update-component-install";
+    public static final String RUTA_NOMBRE_TEST_IDE_RAIZ_COMPONENTE_PRINTMANAGER="tci-pse-update-component-install\\Componentes\\SrvWinFE_POS_Plugin_Rep_Impresa";
+    public static final String RUTA_NOMBRE_TEST_IDE_RAIZ_COMPONENTE_SERVER="tci-pse-update-component-install\\Componentes\\SrvWinFE_POS_Modulo_Servidor";
+    public static final String RUTA_NOMBRE_TEST_IDE_RAIZ_COMPONENTE_BD="tci-pse-update-component-install\\Componentes\\SrvWinFE_POS_Modulo_BD";
+    public static final String RUTA_NOMBRE_TEST_IDE_RAIZ_COMPONENTE_CLIENTE="tci-pse-update-component-install\\Componentes\\SrvWinFE_POS_Modulo_Cliente";
+    //public static final String RUTA_NOMBRE_TEST_IDE_VERSION_COMPONENTE_SERVER="tci-pse-update-component-install\\Componentes\\SrvWinFE_POS_Modulo_Servidor\\lib\\config";
+    public static final String RUTA_NOMBRE_TEST_IDE_VERSION_COMPONENTE_SERVER="\\Componentes\\SrvWinFE_POS_Modulo_Servidor\\lib\\config";
 
 
     public static final String CMD_VERIFICAR_SERVICIO_WINDOW_POS="cmd /C sc queryex type= service state= all | find /i \"SrvWinFE_POS_Modulo_Servidor\""; // buscar servicio window de POS
@@ -52,6 +53,7 @@ public class Constantes {
     public static final String CMD_ROBOCOPY="ROBOCOPY ";
     //public static final String CMD_MIR=" /MIR ";
     public static final String CMD_MIR=" /B /E ";
+    public static final String SERVICIO_POS_UPDATE_EPOS="SrvWinFE_POS_Modulo_Servidor";
     public static final String SERVICIO_POS_SERVER="SrvWinFE_POS_Modulo_Servidor";
     public static final String SERVICIO_POS_BD="SrvWinFE_POS_Modulo_BD";
     public static final String SERVICIO_POS_CLIENTE="SrvWinFE_POS_Modulo_Cliente";

@@ -13,23 +13,13 @@ import java.io.IOException;
 import java.io.Serializable;
 import java.net.URL;
 
-/**
- * @author: Deyviz Perez
- * @version: 1.0
- * @detail:  Clase donde se inicia el sistema
- * **/
 public class Main extends Application implements Serializable {
 
     static Logger logger = Logger.getLogger(Main.class);
-    private static Main mainInstance;
     private Parent root;
 
-
-    public Main() throws ClassNotFoundException {
+    public Main(){
         try {
-//        Properties props = new Properties();
-//        props.load(getClass().getResourceAsStream("../resource/log4j.properties"));
-//        PropertyConfigurator.configure(props);
             URL url = Loader.getResource("log4j.properties");
             PropertyConfigurator.configure(url);
 
@@ -39,10 +29,6 @@ public class Main extends Application implements Serializable {
             logger.error(e);
         }
     }
-    public static Main getInstance() {
-        return mainInstance;
-    }
-
 
     @Override
     public void start(Stage primaryStage) {
@@ -57,19 +43,11 @@ public class Main extends Application implements Serializable {
     public void inicioAsistenteActualizacion() {
         FXMLLoader loader;
         try {
-            //InicioAsistenteActualizacionController inicioAsistenteActualizacionController = new InicioAsistenteActualizacionController();
-           // loader = new FXMLLoader(getClass().getResource("/view/inicioAsistenteActualizacion.fxml"));
             loader = new_stage2("/view/inicioAsistenteActualizacion.fxml");
-          //  loader.setController(inicioAsistenteActualizacionController);
- //            FXMLLoader loader = new FXMLLoader(InicioAsistenteActualizacionController.class.getResource("view/inicioAsistenteActualizacion.fxml"));
-//            loader = new_stage2("inicioAsistenteActualizacion.fxml");
             InicioAsistenteActualizacionController inicioAsistenteActualizacionController = loader.getController();
             inicioAsistenteActualizacionController.setApp(this);
         } catch (Exception e) {
-            logger.error("Error:"+ e);
-            logger.error("Error Cause:"+ e.getCause());
-            logger.error("Error Message:"+ e.getMessage());
-            e.printStackTrace();
+            logger.error("Ocurrio un error al iniciar el asistente de actualizacion :",e);
         }
     }
 
