@@ -15,8 +15,8 @@ public class Utilitario {
     Logger logger = Logger.getLogger(Utilitario.class);
     Constantes constante = new Constantes();
     public String conocerRutaActualizador(String servicio){
-        String detalle=null;
-        String ubicacionActualizador = conocerUbicacionDelActualizadorCMD();
+        String detalle;
+        String ubicacionActualizador = obtenerRutaServicioInstalarCMD();
         if(ubicacionActualizador!=null) {
             if (servicio.equalsIgnoreCase(constante.SERVICIO_POS_SERVER)) {
                 detalle = ubicacionActualizador.substring(0, ubicacionActualizador.indexOf(constante.RUTA_NOMBRE_TEST_IDE_RAIZ));
@@ -42,13 +42,10 @@ public class Utilitario {
         return null;
     }
 
-    public String conocerRutaVersionActualizador(String nombreServicio){
-        String ubicacionActualizador = conocerUbicacionDelActualizadorCMD();
-        if(ubicacionActualizador!=null) {
-                return ubicacionActualizador.concat(constante.RUTA_NOMBRE_TEST_IDE_VERSION_COMPONENTE_SERVER);
-        }else{
-            return constante.NO_EXISTE;
-        }
+    public String obtenerRutaServicioInstalar(){
+        String rutaActual = obtenerRutaServicioInstalarCMD();
+        return (rutaActual!=null)?rutaActual.concat(constante.RUTA_NOMBRE_TEST_IDE_VERSION_COMPONENTE_UPDATE_EPOS):null;
+
     }
 //    public String conocerRutaActualizador(String servicio){
 //        String detalle=null;
@@ -79,9 +76,9 @@ public class Utilitario {
 //        }
 //        return null;
 //    }
-    public String conocerRutaBackupInstalador(String servicio){
+    public String conocerRutaBackupInstalador(String servicio) throws IOException {
         String detalle=null;
-        String extraerRutaServicioPOSexe =extraerRutaServicioPOSexe();
+        String extraerRutaServicioPOSexe =obtenerRutaServicioInstalado();
         if(extraerRutaServicioPOSexe!=null) {
             if (servicio.equalsIgnoreCase(constante.SERVICIO_POS_SERVER)) {
                 detalle = extraerRutaServicioPOSexe.substring(0, extraerRutaServicioPOSexe.indexOf("SERVIDOR"));
@@ -123,9 +120,9 @@ public class Utilitario {
         String fechaBackup = fecha.substring(0,4)+fecha.substring(5,7)+fecha.substring(8,10);
         return fechaBackup;
     }
-    public String conocerRutaInstalador(String servicio){
+    public String conocerRutaInstalador(String servicio) throws IOException {
         String detalle=null;
-        String extraerRutaServicioPOSexe =extraerRutaServicioPOSexe();
+        String extraerRutaServicioPOSexe =obtenerRutaServicioInstalado();
         if(extraerRutaServicioPOSexe!=null) {
             if (servicio.equalsIgnoreCase(constante.SERVICIO_POS_SERVER)) {
                 detalle = extraerRutaServicioPOSexe.substring(0, extraerRutaServicioPOSexe.indexOf("SERVIDOR"));
@@ -175,45 +172,42 @@ public class Utilitario {
         }
         return null;
     }
-    public String versionPOS(String rutaPOS){
-        File archivo = null;
-        FileReader fr = null;
-        BufferedReader br = null;
-
+    public String obtenerVersion(String rutaVersion)  {
         try {
-            archivo = new File (rutaPOS+"\\version-number.txt");
+           File archivo = new File (rutaVersion+"\\version-number.txt");
             if(archivo.exists()){
-                fr = new FileReader (archivo);
-                br = new BufferedReader(fr);
+                FileReader fileReader = new FileReader (archivo);
+                BufferedReader bufferedReader = new BufferedReader(fileReader);
                 String linea;
-                StringBuilder sbVersion = new StringBuilder();
-                while((linea=br.readLine())!=null) {
-                    sbVersion.append(linea);
-                    logger.info("La version a actualizar: "+linea);
+                StringBuilder detalleVersion = new StringBuilder();
+                while((linea=bufferedReader.readLine())!=null) {
+                    detalleVersion.append(linea);
                 }
-                if(sbVersion!=null){
-                    String version=sbVersion.substring(sbVersion.indexOf("=")+1,sbVersion.length());
-                    return version;
-                }else{
-                    logger.error("Ocurrio un error al obtener la version a instalar/actualizar");
+                fileReader.close();
+                bufferedReader.close();
+                if(detalleVersion==null){
+                    logger.error("Ocurrio un error al obtener la version: El archivo 'version-number.txt' se encuentra vacio");
+                    return constante.ERROR;
                 }
+                return detalleVersion.substring(detalleVersion.indexOf("=")+1,detalleVersion.length());
             }else{
-                logger.error("El archivo 'version-number.txt' no existe");
-                return null;
+                logger.error("Ocurrio un error al obtener la version: El archivo 'version-number.txt' no existe");
+                return constante.ERROR;
             }
+        } catch(IOException e) {
+            logger.error("Ocurrio un error al obtener la version: ",e);
+            return constante.ERROR;
         }
-        catch(Exception e){
-            e.printStackTrace();
-        }finally{
-            try{
-                if( null != fr ){
-                    fr.close();
-                }
-            }catch (Exception e2){
-                e2.printStackTrace();
-            }
-        }
-        return null;
+//        }finally{
+//            try{
+//                if( null != fr ){
+//                    fr.close();
+//                }
+//            }catch (Exception e2){
+//                logger.error("Ocurrio un error al ");
+//            }
+//        }
+//        return null;
     }
 
     public String extraerUbicacionServicioPOSPrintManager(String rptaUbicacionesCMD){
@@ -229,19 +223,16 @@ public class Utilitario {
         }
         return rutaPOSPrintManagerExe;
     }
-    public String extraerUbicacionServicioPOS(String rptaUbicacionesCMD){
+    public String identificarRutaServicioInstalado(String rptaUbicacionesCMD){
         String[] splited = rptaUbicacionesCMD.split("(?!\1)[\"']");  //("(?!\\1)[\"']");
-        String rutaPOSexe = null;
         for(int i=0 ;i<splited.length;i++){
-            if(splited[i].contains(constante.CMD_POS_EXE)){
-                int indice = splited[i].indexOf(constante.CMD_POS_EXE);
-                rutaPOSexe = splited[i].substring(0,indice);
-                return rutaPOSexe;
+            if(splited[i].contains(constante.CMD_UPDATE_POS_EXE)){
+                return splited[i].substring(0,splited[i].indexOf(constante.CMD_UPDATE_POS_EXE));
             }
         }
-        return rutaPOSexe;
+        return null;
     }
-    public String conocerStatusServicioPOS(String servicio){
+    public String conocerStatusServicioPOS(String servicio) throws IOException {
         String detalle=null;
         if(servicio.equalsIgnoreCase(constante.SERVICIO_POS_SERVER)) {
             String ejecutarComandoCMDBServer=ejecutarComandoCMD(constante.CMD_STATUS_SERVICIO_POS_SERVER);
@@ -299,7 +290,7 @@ public class Utilitario {
 
         return detalle;
     }
-    public String extraerRutaServicioPOSPrintManagerExe(){
+    public String extraerRutaServicioPOSPrintManagerExe() throws IOException {
         String detalleServicio=null;
         String detallePrintManagerEN=ejecutarComandoCMD(constante.CMD_UBICACION_SERVICIO_POS_PRINTMANAGER_PC_ENGLISH);
         String detallePrintManagerES=ejecutarComandoCMD(constante.CMD_UBICACION_SERVICIO_POS_PRINTMANAGER_PC_SPANISH);
@@ -313,46 +304,61 @@ public class Utilitario {
         return detalleServicio;
     }
 
-    public String extraerRutaServicioPOSexe(){
-        String detalleServicio;
-        String detallePosSpanish=ejecutarComandoCMD(constante.CMD_UBICACION_SERVICIO_POS_PC_SPANISH);
-        detalleServicio=(detallePosSpanish!=null)?extraerUbicacionServicioPOS(detallePosSpanish):extraerUbicacionServicioPOS(ejecutarComandoCMD(constante.CMD_UBICACION_SERVICIO_POS_PC_ENGLISH));
-        return detalleServicio;
-    }
-
-    public String  conocerUbicacionDelActualizadorCMD() {
-        ProcessBuilder processBuilder = new ProcessBuilder();
-        processBuilder.command("cmd.exe", "/c", "chdir");
-        try {
-            Process process = processBuilder.start();
-            BufferedReader reader = new BufferedReader(new InputStreamReader(process.getInputStream()));
-            String line = reader.readLine();
-            return line;
-        } catch (Exception e) {
-            logger.error("Ocurrio un error al obtener la version del actualizador");
+    public String obtenerRutaServicioInstalado() throws IOException {
+        String detalleServicioIntalado = ejecutarComandoCMD(constante.CMD_UBICACION_SERVICIO_UPDATE_POS_PC_SPANISH);
+        if (detalleServicioIntalado != null) {
+            return identificarRutaServicioInstalado(detalleServicioIntalado);
+        } else if (ejecutarComandoCMD(constante.CMD_UBICACION_SERVICIO_UPDATE_POS_PC_ENGLISH) != null) {
+            return identificarRutaServicioInstalado(ejecutarComandoCMD(constante.CMD_UBICACION_SERVICIO_UPDATE_POS_PC_ENGLISH));
+        } else {
+            logger.error("Ocurrio un error al obtener la ruta del servicio instalado: no se encuentra el servicio");
             return null;
         }
     }
-    public String ejecutarComandoCMD(String command){
-        try {
 
-            StringBuilder rpt = new StringBuilder();
+    public String obtenerRutaServicioInstalarCMD() {
+        ProcessBuilder processBuilder = new ProcessBuilder();
+        processBuilder.command("cmd.exe", "/c", "chdir");
+        Process process =null;
+        try {
+            process = processBuilder.start();
+            BufferedReader reader = new BufferedReader(new InputStreamReader(process.getInputStream()));
+            String line = reader.readLine();
+            process.destroy();
+            return line;
+        } catch (Exception e) {
+            logger.error("Ocurrio un error al obtener la ruta del servicio a instalar: ",e);
+            process.destroy();
+            return null;
+        }
+    }
+    public String ejecutarComandoCMD(String command) throws IOException {
+        Process process = null;
+        BufferedReader bufferedReader=null;
+        try {
+            StringBuilder respuesta = new StringBuilder();
             logger.info("Se va a ejecutar el comando CMD :"+command);
-            Process process = Runtime.getRuntime().exec(command);
-            BufferedReader in = new BufferedReader(new InputStreamReader(process.getInputStream()));
+            process = Runtime.getRuntime().exec(command);
+            bufferedReader = new BufferedReader(new InputStreamReader(process.getInputStream()));
             String line;
-            while ((line = in.readLine()) != null) {
-                rpt.append(line);
+            while ((line = bufferedReader.readLine()) != null) {
+                respuesta.append(line);
             }
-            if(!rpt.toString().isEmpty()){
-                logger.info("Respuesta del comando CMD : "+rpt.toString());
-                return rpt.toString();
+            if(!respuesta.toString().isEmpty()){
+                logger.info("Respuesta del comando CMD : "+respuesta.toString());
+                process.destroy();
+                bufferedReader.close();
+                return respuesta.toString();
             }else {
-                logger.error("Respuesta del comando CMD : "+rpt.toString());
+                logger.error("Respuesta del comando CMD : "+respuesta.toString());
+                process.destroy();
+                bufferedReader.close();
                 return null;
             }
         } catch (Exception e) {
-            logger.error("Ocurrio un error al ejecutar el comando CMD :"+command);
+            logger.error("Ocurrio un error al ejecutar el comando CMD :",e);
+            process.destroy();
+            bufferedReader.close();
             return null;
         }
 }

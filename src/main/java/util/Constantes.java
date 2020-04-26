@@ -19,17 +19,16 @@ public class Constantes {
     public static final String RUTA_NOMBRE_TEST_IDE_RAIZ_COMPONENTE_SERVER="tci-pse-update-component-install\\Componentes\\SrvWinFE_POS_Modulo_Servidor";
     public static final String RUTA_NOMBRE_TEST_IDE_RAIZ_COMPONENTE_BD="tci-pse-update-component-install\\Componentes\\SrvWinFE_POS_Modulo_BD";
     public static final String RUTA_NOMBRE_TEST_IDE_RAIZ_COMPONENTE_CLIENTE="tci-pse-update-component-install\\Componentes\\SrvWinFE_POS_Modulo_Cliente";
-    //public static final String RUTA_NOMBRE_TEST_IDE_VERSION_COMPONENTE_SERVER="tci-pse-update-component-install\\Componentes\\SrvWinFE_POS_Modulo_Servidor\\lib\\config";
-    public static final String RUTA_NOMBRE_TEST_IDE_VERSION_COMPONENTE_SERVER="\\Componentes\\SrvWinFE_POS_Modulo_Servidor\\lib\\config";
+    public static final String RUTA_NOMBRE_TEST_IDE_VERSION_COMPONENTE_UPDATE_EPOS="\\Componentes\\SrvWinFE_POS_Modulo_Servidor\\lib\\config";
 
 
-    public static final String CMD_VERIFICAR_SERVICIO_WINDOW_POS="cmd /C sc queryex type= service state= all | find /i \"SrvWinFE_POS_Modulo_Servidor\""; // buscar servicio window de POS
-    public static final String CMD_UBICACION_SERVICIO_POS_PC_ENGLISH="sc qc \"SrvWinFE_POS_Modulo_Servidor\" 5000 | find \"BINARY_PATH_NAME\"";
-    public static final String CMD_UBICACION_SERVICIO_POS_PC_SPANISH="sc qc \"SrvWinFE_POS_Modulo_Servidor\" 5000 | find \"NOMBRE_RUTA_BINARIO\"";
+    public static final String CMD_VERIFICAR_SERVICIO_WINDOW_UPDATE_EPOS="cmd /C sc queryex type= service state= all | find /i \"SrvWinFE_POS_Modulo_Servidor\""; // buscar servicio window de POS
+    public static final String CMD_UBICACION_SERVICIO_UPDATE_POS_PC_ENGLISH="sc qc \"SrvWinFE_POS_Modulo_Servidor\" 5000 | find \"BINARY_PATH_NAME\"";
+    public static final String CMD_UBICACION_SERVICIO_UPDATE_POS_PC_SPANISH="sc qc \"SrvWinFE_POS_Modulo_Servidor\" 5000 | find \"NOMBRE_RUTA_BINARIO\"";
 
     public static final String CMD_UBICACION_SERVICIO_POS_PRINTMANAGER_PC_ENGLISH="sc qc \"SrvWinFE_POS_Plugin_Rep_Impresa\" 5000 | find \"BINARY_PATH_NAME\"";
     public static final String CMD_UBICACION_SERVICIO_POS_PRINTMANAGER_PC_SPANISH="sc qc \"SrvWinFE_POS_Plugin_Rep_Impresa\" 5000 | find \"NOMBRE_RUTA_BINARIO\"";
-    public static final String CMD_POS_EXE="posserver.exe";
+    public static final String CMD_UPDATE_POS_EXE="posserver.exe";
     public static final String CMD_POS_PRINTMANAGER_EXE="posprintmanager.exe";
 
     public static final String CMD_NET_STOP_PRINTMANAGER="net stop SrvWinFE_POS_Plugin_Rep_Impresa";
@@ -92,6 +91,7 @@ public class Constantes {
     public static final String SERVICIO_POS_SERVICIO_NO_EXISTE_DETENIDO_CLIENTE="El Servicio SrvWinFE_POS_Modulo_Cliente no existe ó esta detenido.";
 
     public static final String NO_EXISTE="No existe ";
+    public static final String ERROR="Error";
 
     public static final String ICON_LOADING= "view/images/icon/16px/loading.png";
     public static final String ICON_INFO= "view/images/icon/16px/info.png";

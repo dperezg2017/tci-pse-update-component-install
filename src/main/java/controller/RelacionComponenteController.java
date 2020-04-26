@@ -8,6 +8,7 @@ import javafx.scene.control.TableView;
 import javafx.scene.control.cell.PropertyValueFactory;
 import javafx.stage.Stage;
 
+import java.io.IOException;
 import java.util.Collection;
 
 import model.Pos;
@@ -64,7 +65,7 @@ public class RelacionComponenteController {
 
     Utilitario utilitario = new Utilitario();
 
-    public void setApp(Main application) {
+    public void setApp(Main application) throws IOException {
         this.application = application;
 
         descripcion.setCellValueFactory(new PropertyValueFactory<Pos, String>("descripcion"));
@@ -73,7 +74,7 @@ public class RelacionComponenteController {
         ubicacionActualizador.setCellValueFactory(new PropertyValueFactory<Pos, String>("ubicacionActualizador"));
         tablaRelacion.getItems().setAll(insert());
     }
-    private Collection<? extends Pos> insert(){
+    private Collection<? extends Pos> insert() throws IOException {
 
         /* Ubicacion del Actualizador POS*/
         String ubicacionActualizadorPrintManager=utilitario.conocerRutaActualizador(constante.SERVICIO_POS_PRINTMANAGER);

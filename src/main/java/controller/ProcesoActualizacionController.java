@@ -14,6 +14,7 @@ import javafx.stage.Stage;
 import javax.swing.*;
 import java.beans.PropertyChangeEvent;
 import java.beans.PropertyChangeListener;
+import java.io.IOException;
 import java.util.Collection;
 
 import controller.task.ActualizarServicioTask;
@@ -98,6 +99,9 @@ public class ProcesoActualizacionController implements PropertyChangeListener {
     private TableView<PosActualizacion> tablaActualizacion;
     private Main application;
 
+    public ProcesoActualizacionController() throws IOException {
+    }
+
     public void setApp(Main application) {
         this.application = application;
 //        this.btnSiguiente.setDisable();
@@ -123,7 +127,7 @@ public class ProcesoActualizacionController implements PropertyChangeListener {
     }
 
     @FXML
-    private void InicioActualizacion() {
+    private void InicioActualizacion() throws IOException {
 
         ObservableList<PosActualizacion> list = FXCollections.observableArrayList();
         list.add(new PosActualizacion(constante.SERVICIO_POS_PRINTMANAGER, estadoPosPrintManager, constante.SERVICIO_POS_DETENIENDO_SERVICIO, loading(), null, null, null, ubicacionActualizadorPrintManager));
@@ -202,6 +206,9 @@ public class ProcesoActualizacionController implements PropertyChangeListener {
         RespaldarServicioTask respaldarServicioTask = new RespaldarServicioTask();
         ActualizarServicioTask actualizarServicioTask = new ActualizarServicioTask();
         IniciarServicioTask iniciarServicioTask = new IniciarServicioTask();
+
+        TaskDetenerServicio() throws IOException {
+        }
 
         private ImageView detenerPrintmanager() {
             try {

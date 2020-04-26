@@ -2,6 +2,8 @@ package controller.task;
 import util.Constantes;
 import util.Utilitario;
 
+import java.io.IOException;
+
 /**
  * @author: Deyviz Perez
  * @version: 1.0
@@ -22,6 +24,9 @@ public class ActualizarServicioTask {
     String ubicacionInstaladorBd=utilitario.conocerRutaInstalador(constante.SERVICIO_POS_BD);
     String ubicacionInstaladorCliente=utilitario.conocerRutaInstalador(constante.SERVICIO_POS_CLIENTE);
     String ubicacionInstaladorPrintManager=utilitario.conocerRutaInstalador(constante.SERVICIO_POS_PRINTMANAGER);
+
+    public ActualizarServicioTask() throws IOException {
+    }
 
 
     public Boolean actualizarPrintmanager() {

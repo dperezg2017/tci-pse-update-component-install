@@ -9,6 +9,8 @@ import javafx.stage.Stage;
 import util.Constantes;
 import util.Utilitario;
 
+import java.io.IOException;
+
 /**
  * @author: Deyviz Perez
  * @version: 1.0
@@ -34,6 +36,9 @@ public class ResultadoActualizacionController {
     String estadoPosServer=utilitario.conocerStatusServicioPOS(constante.SERVICIO_POS_SERVER);
     String estadoPosBd=utilitario.conocerStatusServicioPOS(constante.SERVICIO_POS_BD);
     String estadoPosCliente=utilitario.conocerStatusServicioPOS(constante.SERVICIO_POS_CLIENTE);
+
+    public ResultadoActualizacionController() throws IOException {
+    }
 
     public void setApp(Main application) {
 

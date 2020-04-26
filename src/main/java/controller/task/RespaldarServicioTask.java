@@ -1,5 +1,6 @@
 package controller.task;
 
+import java.io.IOException;
 import java.text.DateFormat;
 import java.text.SimpleDateFormat;
 import util.Constantes;
@@ -41,6 +42,9 @@ public class RespaldarServicioTask {
 
     String ubicacionInstaladorPrintManagerBackupCONF = utilitario.conocerRutaBackupInstalador(constante.SERVICIO_POS_PRINTMANAGER);
     String ubicacionInstaladorPrintManagerBackupLIB = utilitario.conocerRutaBackupInstalador(constante.SERVICIO_POS_PRINTMANAGER);
+
+    public RespaldarServicioTask() throws IOException {
+    }
 
     public Boolean respaldarPrintmanager() {
         try {

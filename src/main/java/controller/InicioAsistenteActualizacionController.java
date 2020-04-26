@@ -12,6 +12,7 @@ import org.apache.log4j.Logger;
 import util.Constantes;
 import util.Utilitario;
 
+import java.io.IOException;
 import java.util.regex.Pattern;
 
 public class InicioAsistenteActualizacionController {
@@ -34,19 +35,18 @@ public class InicioAsistenteActualizacionController {
 
     private Main application;
 
-    public void setApp(Main application) {
-        // String version =(this.versionPOS()==null)?this.versionPOS():"";
-        String version = this.versionPOS();
-        String versionActualizador = this.versionActualizadorPOS();
+    public void setApp(Main application) throws IOException {
+        String versionInstalada = this.versionInstalada();
+        String versionInstalar = this.versionInstalar();
         this.application = application;
-        lblversionInstalador.setText(version);
-        lblversionActualizador.setText(versionActualizador);
+        lblversionInstalador.setText(versionInstalada);
+        lblversionActualizador.setText(versionInstalar);
     }
 
-    public void irRelacionComponente_button(ActionEvent event) throws InterruptedException {
+    public void irRelacionComponente_button(ActionEvent event) throws IOException {
 
-        String versionInstalador = this.versionPOS();
-        String versionActualizador = this.versionActualizadorPOS();
+        String versionInstalador = this.versionInstalada();
+        String versionActualizador = this.versionInstalar();
         Boolean validarVersiones = false;
         String[] partsInstalador = versionInstalador.split(Pattern.quote("."));
         int instalador1 = Integer.parseInt(partsInstalador[0]);
@@ -107,8 +107,8 @@ public class InicioAsistenteActualizacionController {
         }
         if (!validarVersiones) {
             if (versionInstalador != null && versionActualizador != null) {
-                logger.info("Versión del Instalador: " + this.versionPOS());
-                logger.info("Versión del Actualizador: " + this.versionActualizadorPOS());
+                logger.info("Versión Instalada: " + this.versionInstalada());
+                logger.info("Versión a Instalar: " + this.versionInstalar());
                 this.application.relacionComponente();
                 this.Exit_button();
             } else {
@@ -127,22 +127,19 @@ public class InicioAsistenteActualizacionController {
         stage.close();
     }
 
-    public String versionPOS() {
-        if (utilitario.ejecutarComandoCMD(constante.CMD_VERIFICAR_SERVICIO_WINDOW_POS) != null) {
-            String rutaServicioPOS = utilitario.extraerRutaServicioPOSexe();
-
-            rutaServicioPOS = rutaServicioPOS.substring(0, rutaServicioPOS.indexOf("bin")) + "lib\\config";
-
-            return utilitario.versionPOS(rutaServicioPOS);
+    public String versionInstalada() throws IOException {
+        if (utilitario.ejecutarComandoCMD(constante.CMD_VERIFICAR_SERVICIO_WINDOW_UPDATE_EPOS) != null) {
+            String rutaServicioInstalado = utilitario.obtenerRutaServicioInstalado();
+            String rutaVersionInstalado = (rutaServicioInstalado!=null)?rutaServicioInstalado.substring(0, rutaServicioInstalado.indexOf("bin")) + "lib\\config":null;
+            return (rutaVersionInstalado!=null)?utilitario.obtenerVersion(rutaVersionInstalado):constante.NO_EXISTE;
         } else {
             return constante.NO_EXISTE;
         }
     }
 
-    public String versionActualizadorPOS() {
-        String ubicacionActualizadorServidor = utilitario.conocerRutaVersionActualizador(constante.SERVICIO_POS_UPDATE_EPOS);
-        String versionActualizador = utilitario.versionPOS(ubicacionActualizadorServidor);
-        return versionActualizador;
+    public String versionInstalar() {
+        String rutaVersionInstalar = utilitario.obtenerRutaServicioInstalar();
+        return (rutaVersionInstalar!=null)?utilitario.obtenerVersion(rutaVersionInstalar):constante.ERROR;
     }
 
 }
