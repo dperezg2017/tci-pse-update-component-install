@@ -99,4 +99,8 @@ public class Constantes {
     public static final String ICON_WARNING= "view/images/icon/16px/warning.png";
     public static final String ICON_CHECK= "view/images/icon/16px/check.png";
 
+    public static final String MSJ_IAA_INSTALACION= "Para continuar con la Instalación haga clic en el boton 'Siguiente'.";
+    public static final String MSJ_IAA_ACTUALIZACION= "Para continuar con la Actualización haga clic en el boton 'Siguiente'.";
+    public static final String MSJ_IAA_VERSION_MAYOR_IGUAL= "No se realizara ninguna acción, por que la versión instalada es mayor ó igual";
+    public static final String MSJ_IAA_VERSION_ERROR= "Ocurrio un error al obtener la versión, comuniquese con el administrador.";
 }

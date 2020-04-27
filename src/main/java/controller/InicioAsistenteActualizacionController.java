@@ -25,10 +25,13 @@ public class InicioAsistenteActualizacionController {
     private Button btnIrRelacionComponente;
 
     @FXML
-    private Label lblversionInstalador = new Label();
+    private Label lblmsjInicioAsistenteActualizacion = new Label();
 
     @FXML
-    private Label lblversionActualizador = new Label();
+    private Label lblversionInstalada = new Label();
+
+    @FXML
+    private Label lblversionInstalar = new Label();
 
     @FXML
     private Button btnExit;
@@ -38,88 +41,28 @@ public class InicioAsistenteActualizacionController {
     public void setApp(Main application) throws IOException {
         String versionInstalada = this.versionInstalada();
         String versionInstalar = this.versionInstalar();
+        String msjInicioAsistenteActualizacion = msjInicioAsistenteActualizacion(versionInstalada,versionInstalar);
         this.application = application;
-        lblversionInstalador.setText(versionInstalada);
-        lblversionActualizador.setText(versionInstalar);
+        lblversionInstalada.setText(versionInstalada);
+        lblversionInstalar.setText(versionInstalar);
+        lblmsjInicioAsistenteActualizacion.setText(msjInicioAsistenteActualizacion);
     }
 
     public void irRelacionComponente_button(ActionEvent event) throws IOException {
 
-        String versionInstalador = this.versionInstalada();
-        String versionActualizador = this.versionInstalar();
-        Boolean validarVersiones = false;
-        String[] partsInstalador = versionInstalador.split(Pattern.quote("."));
-        int instalador1 = Integer.parseInt(partsInstalador[0]);
-        int instalador2 = Integer.parseInt(partsInstalador[1]);
-        int instalador3 = Integer.parseInt(partsInstalador[2]);
-        int instalador4 = Integer.parseInt(partsInstalador[3]);
-        String[] partsActualizador = versionActualizador.split(Pattern.quote("."));
-        int actualizador1 = Integer.parseInt(partsActualizador[0]);
-        int actualizador2 = Integer.parseInt(partsActualizador[1]);
-        int actualizador3 = Integer.parseInt(partsActualizador[2]);
-        int actualizador4 = Integer.parseInt(partsActualizador[3]);
+        String mensaje=msjInicioAsistenteActualizacion(this.versionInstalada(),this.versionInstalar());
 
-        if (instalador1 > actualizador1) {
-            validarVersiones = true;
-            Alert alert = new Alert(Alert.AlertType.ERROR, "La versión a actualizar es menor o igual a la que ya se encuentra instalada. Por favor verifique", ButtonType.OK);
+        if(mensaje.equalsIgnoreCase(constante.MSJ_IAA_VERSION_MAYOR_IGUAL)){
+            Alert alert = new Alert(Alert.AlertType.ERROR, mensaje, ButtonType.OK);
             alert.showAndWait();
-            if (alert.getResult() == ButtonType.YES) {
-                //do stuff
+            if (alert.getResult() == ButtonType.OK) {
+                logger.info("LE DISTE ACEPTAR");
             }
+        }else if(mensaje.equalsIgnoreCase(constante.MSJ_IAA_VERSION_ERROR)){
+            Alert alert = new Alert(Alert.AlertType.WARNING, mensaje, ButtonType.OK);
+            alert.showAndWait();
         }
-        if (instalador1 == actualizador1) {
-            if (instalador2 > actualizador2) {
-                validarVersiones = true;
-                Alert alert = new Alert(Alert.AlertType.ERROR, "La versión a actualizar es menor o igual a la que ya se encuentra instalada. Por favor verifique", ButtonType.OK);
-                alert.showAndWait();
-                if (alert.getResult() == ButtonType.YES) {
-                    //do stuff
-                }
-            }
-            if (instalador2 == actualizador2) {
-                if (instalador3 > actualizador3) {
-                    validarVersiones = true;
-                    Alert alert = new Alert(Alert.AlertType.ERROR, "La versión a actualizar es menor o igual a la que ya se encuentra instalada. Por favor verifique", ButtonType.OK);
-                    alert.showAndWait();
-                    if (alert.getResult() == ButtonType.YES) {
-                        //do stuff
-                    }
-                }
-                if (instalador3 == actualizador3) {
-                    if (instalador4 > actualizador4) {
-                        validarVersiones = true;
-                        Alert alert = new Alert(Alert.AlertType.ERROR, "La versión a actualizar es menor o igual a la que ya se encuentra instalada. Por favor verifique", ButtonType.OK);
-                        alert.showAndWait();
-                        if (alert.getResult() == ButtonType.YES) {
-                            //do stuff
-                        }
-                    }
-                    if (instalador4 == actualizador4) {
-                        validarVersiones = true;
-                        Alert alert = new Alert(Alert.AlertType.ERROR, "La versión a actualizar es menor o igual a la que ya se encuentra instalada. Por favor verifique", ButtonType.OK);
-                        alert.showAndWait();
-                        if (alert.getResult() == ButtonType.YES) {
-                            //do stuff
-                        }
-                    }
-                }
-            }
-        }
-        if (!validarVersiones) {
-            if (versionInstalador != null && versionActualizador != null) {
-                logger.info("Versión Instalada: " + this.versionInstalada());
-                logger.info("Versión a Instalar: " + this.versionInstalar());
-                this.application.relacionComponente();
-                this.Exit_button();
-            } else {
-                logger.info("No existe el archivo donde se encuentra la versión del Instalador ó el Actualizador ");
-                Alert alert = new Alert(Alert.AlertType.WARNING, "No se encuentra la versión del Instalador ó el Actualizador", ButtonType.OK);
-                alert.showAndWait();
-                if (alert.getResult() == ButtonType.YES) {
-                    //do stuff
-                }
-            }
-        }
+
     }
 
     public void Exit_button() {
@@ -133,6 +76,7 @@ public class InicioAsistenteActualizacionController {
             String rutaVersionInstalado = (rutaServicioInstalado!=null)?rutaServicioInstalado.substring(0, rutaServicioInstalado.indexOf("bin")) + "lib\\config":null;
             return (rutaVersionInstalado!=null)?utilitario.obtenerVersion(rutaVersionInstalado):constante.NO_EXISTE;
         } else {
+            logger.error("Ocurrio un error al obtener la version instalada: no existe el servicio SrvWinFE_POS_Update_Epos");
             return constante.NO_EXISTE;
         }
     }
@@ -140,6 +84,13 @@ public class InicioAsistenteActualizacionController {
     public String versionInstalar() {
         String rutaVersionInstalar = utilitario.obtenerRutaServicioInstalar();
         return (rutaVersionInstalar!=null)?utilitario.obtenerVersion(rutaVersionInstalar):constante.ERROR;
+    }
+
+    public String msjInicioAsistenteActualizacion(String versionInstalada, String versionInstalar ){
+        if(versionInstalada==constante.NO_EXISTE && versionInstalar!=constante.ERROR && versionInstalar!=constante.NO_EXISTE){
+            return constante.MSJ_IAA_INSTALACION;
+        }
+        return utilitario.validarVersion(versionInstalada,versionInstalar);
     }
 
 }

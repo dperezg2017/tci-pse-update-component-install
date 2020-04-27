@@ -1,11 +1,15 @@
 package util;
 
+import javafx.scene.control.Alert;
+import javafx.scene.control.ButtonType;
 import org.apache.log4j.Logger;
 
 import java.io.*;
 import java.text.DateFormat;
 import java.text.SimpleDateFormat;
-import java.util.Date;
+import java.util.*;
+import java.util.regex.Pattern;
+
 /**
  * @author: Deyviz Perez
  * @version: 1.0
@@ -14,6 +18,8 @@ public class Utilitario {
 
     Logger logger = Logger.getLogger(Utilitario.class);
     Constantes constante = new Constantes();
+
+    public Utilitario(){}
     public String conocerRutaActualizador(String servicio){
         String detalle;
         String ubicacionActualizador = obtenerRutaServicioInstalarCMD();
@@ -198,16 +204,6 @@ public class Utilitario {
             logger.error("Ocurrio un error al obtener la version: ",e);
             return constante.ERROR;
         }
-//        }finally{
-//            try{
-//                if( null != fr ){
-//                    fr.close();
-//                }
-//            }catch (Exception e2){
-//                logger.error("Ocurrio un error al ");
-//            }
-//        }
-//        return null;
     }
 
     public String extraerUbicacionServicioPOSPrintManager(String rptaUbicacionesCMD){
@@ -361,5 +357,37 @@ public class Utilitario {
             bufferedReader.close();
             return null;
         }
-}
+    }
+
+    public String validarVersion(String versionInstalada, String versionInstalar){
+        List<String> lstVersionInstalada = new ArrayList<>(Arrays.asList(versionInstalada.split(Pattern.quote("."))));
+        List<String> lstVersionInstalar = new ArrayList<>(Arrays.asList(versionInstalar.split(Pattern.quote("."))));
+        for(int i=0;i<lstVersionInstalada.size();i++){
+            for(int j=0;j<lstVersionInstalar.size();j++){
+                if(Integer.parseInt(lstVersionInstalada.get(i))<Integer.parseInt(lstVersionInstalar.get(i))){
+                    return constante.MSJ_IAA_ACTUALIZACION;
+                }
+                if(Integer.parseInt(lstVersionInstalada.get(i))>=Integer.parseInt(lstVersionInstalar.get(i))){
+                    return constante.MSJ_IAA_VERSION_MAYOR_IGUAL;
+                }
+            }
+        }
+        return constante.MSJ_IAA_VERSION_ERROR;
+    }
+
+//    public static List<String> revertirLista(String version){
+//       List<String> lstVersion = new ArrayList<>(Arrays.asList(version.split(Pattern.quote("."))));
+//       Collections.reverse(lstVersion);
+//       return lstVersion;
+//    }
+
+
+//    public static Integer eliminarPuntosVersionToNumero(String version){
+//        String[] lstVersionInstalada = version.split(Pattern.quote("."));
+//        StringBuilder sb = new StringBuilder();
+//        for(int i=0;i<lstVersionInstalada.length;i++){
+//            sb.append(lstVersionInstalada[i]);
+//        }
+//     return Integer.parseInt(sb.toString());
+//    }
 }

@@ -2,15 +2,20 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="f73df74d-6891-473b-9471-f08fa1086ea6" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/util/UtilitarioTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Componentes/SrvWinFE_POS_Modulo_Servidor/lib/config/version-number.txt" beforeDir="false" afterPath="$PROJECT_DIR$/Componentes/SrvWinFE_POS_Modulo_Servidor/lib/config/version-number.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/controller/InicioAsistenteActualizacionController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/controller/InicioAsistenteActualizacionController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/controller/ProcesoActualizacionController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/controller/ProcesoActualizacionController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/controller/RelacionComponenteController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/controller/RelacionComponenteController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/controller/ResultadoActualizacionController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/controller/ResultadoActualizacionController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/controller/task/ActualizarServicioTask.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/controller/task/ActualizarServicioTask.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/controller/task/IniciarServicioTask.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/controller/task/IniciarServicioTask.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/controller/task/RespaldarServicioTask.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/controller/task/RespaldarServicioTask.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/util/Constantes.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/util/Constantes.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/util/Utilitario.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/util/Utilitario.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/view/inicioAsistenteActualizacion.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/view/inicioAsistenteActualizacion.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/controller/InicioAsistenteActualizacionController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/controller/InicioAsistenteActualizacionController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/util/Constantes.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/util/Constantes.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/util/Utilitario.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/util/Utilitario.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/view/inicioAsistenteActualizacion.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/view/inicioAsistenteActualizacion.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tci-pse-update-component-install.iml" beforeDir="false" afterPath="$PROJECT_DIR$/tci-pse-update-component-install.iml" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/target/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -29,32 +34,35 @@
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
         <counts>
-          <entry key="fxml" value="2" />
-          <entry key="java" value="27" />
+          <entry key="class" value="3" />
+          <entry key="fxml" value="3" />
+          <entry key="java" value="53" />
           <entry key="log" value="1" />
-          <entry key="properties" value="1" />
+          <entry key="properties" value="2" />
+          <entry key="xml" value="1" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
-          <entry key="JAVA" value="27" />
+          <entry key="CLASS" value="3" />
+          <entry key="JAVA" value="53" />
           <entry key="PLAIN_TEXT" value="1" />
-          <entry key="Properties" value="1" />
-          <entry key="XML" value="2" />
+          <entry key="Properties" value="2" />
+          <entry key="XML" value="4" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
-          <entry key="fxml" value="19" />
-          <entry key="java" value="2319" />
-          <entry key="properties" value="76" />
+          <entry key="fxml" value="83" />
+          <entry key="java" value="4982" />
+          <entry key="properties" value="77" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="JAVA" value="2319" />
-          <entry key="Properties" value="76" />
-          <entry key="XML" value="19" />
+          <entry key="JAVA" value="4982" />
+          <entry key="Properties" value="77" />
+          <entry key="XML" value="83" />
         </counts>
       </usages-collector>
     </session>
@@ -64,47 +72,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/util/Utilitario.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="117">
-              <caret line="162" column="94" selection-start-line="162" selection-start-column="94" selection-end-line="162" selection-end-column="94" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/controller/ResultadoActualizacionController.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="117">
-              <caret line="37" column="63" selection-start-line="37" selection-start-column="63" selection-end-line="37" selection-end-column="63" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/controller/task/RespaldarServicioTask.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="117">
-              <caret line="43" column="92" selection-start-line="43" selection-start-column="92" selection-end-line="43" selection-end-column="92" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/controller/RelacionComponenteController.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="236">
-              <caret line="74" column="46" selection-start-line="74" selection-start-column="46" selection-end-line="74" selection-end-column="46" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/java/controller/InicioAsistenteActualizacionController.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="168">
-              <caret line="41" column="55" lean-forward="true" selection-start-line="41" selection-start-column="55" selection-end-line="41" selection-end-column="55" />
+            <state relative-caret-position="136">
+              <caret line="58" column="45" selection-start-line="58" selection-start-column="45" selection-end-line="58" selection-end-column="45" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -113,40 +85,28 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/controller/ProcesoActualizacionController.java">
+        <entry file="file://$PROJECT_DIR$/src/main/java/util/Utilitario.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="117">
-              <caret line="138" column="60" lean-forward="true" selection-start-line="138" selection-start-column="60" selection-end-line="138" selection-end-column="60" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/controller/task/ActualizarServicioTask.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="117">
-              <caret line="24" column="70" selection-start-line="24" selection-start-column="70" selection-end-line="24" selection-end-column="70" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/main/java/controller/task/IniciarServicioTask.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="296">
-              <caret line="41" column="37" selection-start-line="41" selection-start-column="37" selection-end-line="41" selection-end-column="37" />
+            <state relative-caret-position="320">
+              <caret line="361" column="24" selection-start-line="361" selection-start-column="24" selection-end-line="361" selection-end-column="24" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
     </leaf>
   </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>btnIrRelacionComponente</find>
-      <find>servicio</find>
-      <find>waitFor()</find>
-      <find>sb</find>
       <find>versionActualizadorPOS</find>
       <find>Se va a ejecutar el comando CMD</find>
       <find>El archivo 'version-number.txt' no existe</find>
@@ -164,6 +124,19 @@
       <find>rutaServicioInstalado</find>
       <find>Respuesta del comando CMD</find>
       <find>process</find>
+      <find>dor</find>
+      <find>val</find>
+      <find>version</find>
+      <find>.split(</find>
+      <find>parseInt</find>
+      <find>NO_EX</find>
+      <find>const</find>
+      <find>constante</find>
+      <find>Utilitario</find>
+      <find>revertirLista</find>
+      <find>la versión a actualizar</find>
+      <find>versionInstalar</find>
+      <find>validarVersiones</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -172,18 +145,22 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/main/resources/log4j.properties" />
         <option value="$PROJECT_DIR$/src/main/java/controller/Main.java" />
-        <option value="$PROJECT_DIR$/src/main/resources/view/inicioAsistenteActualizacion.fxml" />
-        <option value="$PROJECT_DIR$/src/main/java/util/Constantes.java" />
-        <option value="$PROJECT_DIR$/src/main/java/util/Utilitario.java" />
         <option value="$PROJECT_DIR$/src/main/java/controller/ResultadoActualizacionController.java" />
         <option value="$PROJECT_DIR$/src/main/java/controller/task/RespaldarServicioTask.java" />
         <option value="$PROJECT_DIR$/src/main/java/controller/RelacionComponenteController.java" />
-        <option value="$PROJECT_DIR$/src/main/java/controller/InicioAsistenteActualizacionController.java" />
         <option value="$PROJECT_DIR$/src/main/java/controller/ProcesoActualizacionController.java" />
         <option value="$PROJECT_DIR$/src/main/java/controller/task/ActualizarServicioTask.java" />
         <option value="$PROJECT_DIR$/src/main/java/controller/task/IniciarServicioTask.java" />
+        <option value="$PROJECT_DIR$/src/main/resources/view/inicioAsistenteActualizacion.fxml" />
+        <option value="$PROJECT_DIR$/src/main/resources/log4j.properties" />
+        <option value="$PROJECT_DIR$/pom.xml" />
+        <option value="$PROJECT_DIR$/src/test/java/util/util.java" />
+        <option value="$PROJECT_DIR$/src/test/java/util/Utilitario.java" />
+        <option value="$PROJECT_DIR$/src/main/java/util/Utilitario.java" />
+        <option value="$PROJECT_DIR$/src/test/java/util/UtilitarioTest.java" />
+        <option value="$PROJECT_DIR$/src/main/java/util/Constantes.java" />
+        <option value="$PROJECT_DIR$/src/main/java/controller/InicioAsistenteActualizacionController.java" />
       </list>
     </option>
   </component>
@@ -193,10 +170,11 @@
     <detection-done>true</detection-done>
     <sorting>DEFINITION_ORDER</sorting>
   </component>
-  <component name="ProjectFrameBounds">
-    <option name="x" value="-7" />
-    <option name="width" value="1380" />
-    <option name="height" value="735" />
+  <component name="ProjectFrameBounds" extendedState="6">
+    <option name="x" value="-8" />
+    <option name="y" value="-8" />
+    <option name="width" value="1382" />
+    <option name="height" value="744" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
@@ -236,30 +214,28 @@
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="controller" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="tci-pse-update-component-install" type="b2602c69:ProjectViewProjectNode" />
-              <item name="tci-pse-update-component-install" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
               <item name="util" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="tci-pse-update-component-install" type="b2602c69:ProjectViewProjectNode" />
               <item name="tci-pse-update-component-install" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="resources" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="tci-pse-update-component-install" type="b2602c69:ProjectViewProjectNode" />
               <item name="tci-pse-update-component-install" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="resources" type="462c0819:PsiDirectoryNode" />
-              <item name="view" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="tci-pse-update-component-install" type="b2602c69:ProjectViewProjectNode" />
+              <item name="tci-pse-update-component-install" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="util" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -271,11 +247,16 @@
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1587875455889" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1587959398177" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/../../nuevo-declarador/tci-pse-comprobante" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="settings.editor.selected.configurable" value="reference.projectsettings.compiler.javacompiler" />
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
+      <recent name="util" />
+    </key>
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -289,7 +270,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager">
+  <component name="RunManager" selected="Application.tci-pse-update-component-install">
     <configuration name="tci-pse-update-component-install" type="Application" factoryName="Application">
       <option name="MAIN_CLASS_NAME" value="controller.Main" />
       <module name="tci-pse-update-component-install" />
@@ -297,6 +278,67 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="UtilitarioTest.validar_eliminarPuntosVersionToNumero_ok" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="tci-pse-update-component-install" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="util.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="util" />
+      <option name="MAIN_CLASS_NAME" value="util.UtilitarioTest" />
+      <option name="METHOD_NAME" value="validar_eliminarPuntosVersionToNumero_ok" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="UtilitarioTest.validar_revertirLista_ok" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="tci-pse-update-component-install" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="util.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="util" />
+      <option name="MAIN_CLASS_NAME" value="util.UtilitarioTest" />
+      <option name="METHOD_NAME" value="validar_revertirLista_ok" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="UtilitarioTest.validar_versiones_ok" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="tci-pse-update-component-install" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="util.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="util" />
+      <option name="MAIN_CLASS_NAME" value="util.UtilitarioTest" />
+      <option name="METHOD_NAME" value="validar_versiones_ok" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <list>
+      <item itemvalue="Application.tci-pse-update-component-install" />
+      <item itemvalue="JUnit.UtilitarioTest.validar_versiones_ok" />
+      <item itemvalue="JUnit.UtilitarioTest.validar_eliminarPuntosVersionToNumero_ok" />
+      <item itemvalue="JUnit.UtilitarioTest.validar_revertirLista_ok" />
+    </list>
+    <recent_temporary>
+      <list>
+        <item itemvalue="JUnit.UtilitarioTest.validar_revertirLista_ok" />
+        <item itemvalue="JUnit.UtilitarioTest.validar_eliminarPuntosVersionToNumero_ok" />
+        <item itemvalue="JUnit.UtilitarioTest.validar_versiones_ok" />
+      </list>
+    </recent_temporary>
   </component>
   <component name="SvnConfiguration">
     <configuration />
@@ -308,15 +350,47 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1587651657895</updated>
-      <workItem from="1587651660443" duration="84622000" />
+      <workItem from="1587651660443" duration="106974000" />
     </task>
     <servers />
   </component>
+  <component name="TestHistory">
+    <history-entry file="UtilitarioTest_validar_eliminarPuntosVersionToNumero_ok - 2020.04.26 at 18h 44m 55s.xml">
+      <configuration name="UtilitarioTest.validar_eliminarPuntosVersionToNumero_ok" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="UtilitarioTest_validar_eliminarPuntosVersionToNumero_ok - 2020.04.26 at 18h 52m 39s.xml">
+      <configuration name="UtilitarioTest.validar_eliminarPuntosVersionToNumero_ok" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="UtilitarioTest_validar_eliminarPuntosVersionToNumero_ok - 2020.04.26 at 18h 52m 48s.xml">
+      <configuration name="UtilitarioTest.validar_eliminarPuntosVersionToNumero_ok" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="UtilitarioTest_validar_eliminarPuntosVersionToNumero_ok - 2020.04.26 at 18h 53m 57s.xml">
+      <configuration name="UtilitarioTest.validar_eliminarPuntosVersionToNumero_ok" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="UtilitarioTest_validar_eliminarPuntosVersionToNumero_ok - 2020.04.26 at 19h 35m 32s.xml">
+      <configuration name="UtilitarioTest.validar_eliminarPuntosVersionToNumero_ok" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="UtilitarioTest_validar_revertirLista_ok - 2020.04.26 at 20h 03m 38s.xml">
+      <configuration name="UtilitarioTest.validar_revertirLista_ok" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="UtilitarioTest_validar_revertirLista_ok - 2020.04.26 at 20h 03m 58s.xml">
+      <configuration name="UtilitarioTest.validar_revertirLista_ok" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="UtilitarioTest_validar_revertirLista_ok - 2020.04.26 at 20h 04m 31s.xml">
+      <configuration name="UtilitarioTest.validar_revertirLista_ok" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="UtilitarioTest_validar_revertirLista_ok - 2020.04.26 at 20h 04m 44s.xml">
+      <configuration name="UtilitarioTest.validar_revertirLista_ok" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="UtilitarioTest_validar_revertirLista_ok - 2020.04.26 at 20h 22m 46s.xml">
+      <configuration name="UtilitarioTest.validar_revertirLista_ok" configurationId="JUnit" />
+    </history-entry>
+  </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="84622000" />
+    <option name="totallyTimeSpent" value="106974000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-7" y="0" width="1380" height="735" extended-state="0" />
+    <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
     <editor active="true" />
     <layout>
       <window_info id="Image Layers" />
@@ -324,17 +398,17 @@
       <window_info id="UI Designer" />
       <window_info id="Capture Tool" />
       <window_info id="Favorites" side_tool="true" weight="0.32980332" />
-      <window_info content_ui="combo" id="Project" order="0" weight="0.25227273" />
+      <window_info content_ui="combo" id="Project" order="0" weight="0.25189108" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
-      <window_info anchor="bottom" id="Messages" weight="0.32890365" />
+      <window_info anchor="bottom" id="Messages" weight="0.32569557" />
       <window_info anchor="bottom" id="Database Changes" show_stripe_button="false" />
       <window_info anchor="bottom" id="Version Control" weight="0.34717607" />
       <window_info anchor="bottom" id="Terminal" />
       <window_info anchor="bottom" id="Event Log" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
-      <window_info anchor="bottom" id="Find" order="1" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.38870433" />
-      <window_info anchor="bottom" id="Debug" order="3" weight="0.42857143" />
+      <window_info anchor="bottom" id="Find" order="1" weight="0.32890365" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.32569557" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.22585924" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
@@ -384,132 +458,148 @@
   <component name="XDebuggerManager">
     <breakpoint-manager>
       <breakpoints>
-        <line-breakpoint enabled="true" type="java-line">
+        <line-breakpoint type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/controller/InicioAsistenteActualizacionController.java</url>
-          <line>141</line>
+          <line>85</line>
           <properties />
           <option name="timeStamp" value="6" />
         </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
+        <line-breakpoint type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/util/Utilitario.java</url>
-          <line>324</line>
+          <line>320</line>
           <properties />
           <option name="timeStamp" value="13" />
         </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
+        <line-breakpoint type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/util/Utilitario.java</url>
-          <line>18</line>
+          <line>24</line>
           <properties />
           <option name="timeStamp" value="15" />
         </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/util/Utilitario.java</url>
-          <line>187</line>
-          <properties />
-          <option name="timeStamp" value="17" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
+        <line-breakpoint type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/util/Utilitario.java</url>
           <line>193</line>
           <properties />
+          <option name="timeStamp" value="17" />
+        </line-breakpoint>
+        <line-breakpoint type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/util/Utilitario.java</url>
+          <line>199</line>
+          <properties />
           <option name="timeStamp" value="18" />
         </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
+        <line-breakpoint type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/util/Utilitario.java</url>
-          <line>177</line>
+          <line>183</line>
           <properties />
           <option name="timeStamp" value="19" />
         </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/controller/InicioAsistenteActualizacionController.java</url>
-          <line>47</line>
-          <properties />
-          <option name="timeStamp" value="22" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/controller/InicioAsistenteActualizacionController.java</url>
-          <line>109</line>
-          <properties />
-          <option name="timeStamp" value="23" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/controller/InicioAsistenteActualizacionController.java</url>
-          <line>131</line>
-          <properties />
-          <option name="timeStamp" value="24" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
+        <line-breakpoint type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/util/Utilitario.java</url>
-          <line>232</line>
+          <line>228</line>
           <properties />
           <option name="timeStamp" value="39" />
         </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
+        <line-breakpoint type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/controller/InicioAsistenteActualizacionController.java</url>
-          <line>140</line>
+          <line>84</line>
           <properties />
           <option name="timeStamp" value="41" />
         </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
+        <line-breakpoint type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/util/Utilitario.java</url>
-          <line>181</line>
+          <line>187</line>
           <properties />
           <option name="timeStamp" value="42" />
         </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
+        <line-breakpoint type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/util/Utilitario.java</url>
-          <line>188</line>
+          <line>194</line>
           <properties />
           <option name="timeStamp" value="43" />
         </line-breakpoint>
+        <line-breakpoint type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/controller/InicioAsistenteActualizacionController.java</url>
+          <line>73</line>
+          <properties />
+          <option name="timeStamp" value="45" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/controller/InicioAsistenteActualizacionController.java</url>
+          <line>52</line>
+          <properties />
+          <option name="timeStamp" value="48" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/util/Utilitario.java</url>
+          <line>390</line>
+          <properties />
+          <option name="timeStamp" value="50" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/util/Utilitario.java</url>
+          <line>387</line>
+          <properties />
+          <option name="timeStamp" value="51" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/util/Utilitario.java</url>
+          <line>362</line>
+          <properties />
+          <option name="timeStamp" value="63" />
+        </line-breakpoint>
       </breakpoints>
+      <breakpoints-dialog>
+        <breakpoints-dialog />
+      </breakpoints-dialog>
     </breakpoint-manager>
   </component>
   <component name="debuggerHistoryManager">
     <expressions id="evaluateExpression">
       <expression>
-        <expression-string>version</expression-string>
+        <expression-string>lstVersionInstalada.get(i)</expression-string>
         <language-id>JAVA</language-id>
         <evaluation-mode>EXPRESSION</evaluation-mode>
       </expression>
       <expression>
-        <expression-string>sbVersion</expression-string>
+        <expression-string>lstVersionInstalar.get(i)</expression-string>
         <language-id>JAVA</language-id>
         <evaluation-mode>EXPRESSION</evaluation-mode>
       </expression>
       <expression>
-        <expression-string>splited[i].substring(0,105)</expression-string>
+        <expression-string>(Integer.parseInt(lstVersionInstalada.get(i))&lt;Integer.parseInt(lstVersionInstalar.get(i))</expression-string>
         <language-id>JAVA</language-id>
         <evaluation-mode>EXPRESSION</evaluation-mode>
       </expression>
       <expression>
-        <expression-string>splited[i].indexOf(constante.CMD_UPDATE_POS_EXE)</expression-string>
+        <expression-string>lstVersionInstalada</expression-string>
         <language-id>JAVA</language-id>
         <evaluation-mode>EXPRESSION</evaluation-mode>
       </expression>
       <expression>
-        <expression-string>splited[i].indexOf(constante.CMD_UPDATE_POS_EXE);</expression-string>
+        <expression-string>versionInstalada</expression-string>
         <language-id>JAVA</language-id>
         <evaluation-mode>EXPRESSION</evaluation-mode>
       </expression>
       <expression>
-        <expression-string>splited[i]</expression-string>
+        <expression-string>Integer.valueOf(sb)</expression-string>
         <language-id>JAVA</language-id>
         <evaluation-mode>EXPRESSION</evaluation-mode>
       </expression>
       <expression>
-        <expression-string>splited</expression-string>
+        <expression-string>sb</expression-string>
         <language-id>JAVA</language-id>
         <evaluation-mode>EXPRESSION</evaluation-mode>
       </expression>
       <expression>
-        <expression-string>rutaPOSexe</expression-string>
+        <expression-string>Integer.parseInt(sb)</expression-string>
         <language-id>JAVA</language-id>
         <evaluation-mode>EXPRESSION</evaluation-mode>
       </expression>
       <expression>
-        <expression-string>(detallePosSpanish!=null)</expression-string>
+        <expression-string>Collections.reverse(lstVersionInstalada)</expression-string>
         <language-id>JAVA</language-id>
+        <custom-info>java.util.Collection,java.util.Collections</custom-info>
         <evaluation-mode>EXPRESSION</evaluation-mode>
       </expression>
     </expressions>
@@ -517,13 +607,6 @@
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/log/actualizadorEpos.2020-04-23.log">
       <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/log4j.properties">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="17">
-          <caret line="1" column="35" lean-forward="true" selection-start-line="1" selection-start-column="35" selection-end-line="1" selection-end-column="35" />
-        </state>
-      </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/controller/Main.java">
       <provider selected="true" editor-type-id="text-editor">
@@ -542,32 +625,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/view/inicioAsistenteActualizacion.fxml">
-      <provider editor-type-id="JavaFX-Scene-Builder" />
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="129">
-          <caret line="32" column="15" lean-forward="true" selection-start-line="32" selection-start-column="15" selection-end-line="32" selection-end-column="15" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/util/Constantes.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="136">
-          <caret line="93" column="36" selection-start-line="93" selection-start-column="31" selection-end-line="93" selection-end-column="36" />
-        </state>
-      </provider>
-    </entry>
     <entry file="jar://C:/Program Files/Java/jdk1.8.0_181/src.zip!/java/lang/ProcessBuilder.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="144">
           <caret line="215" column="53" selection-start-line="215" selection-start-column="53" selection-end-line="215" selection-end-column="53" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/util/Utilitario.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="117">
-          <caret line="162" column="94" selection-start-line="162" selection-start-column="94" selection-end-line="162" selection-end-column="94" />
         </state>
       </provider>
     </entry>
@@ -578,48 +639,146 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/controller/task/RespaldarServicioTask.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="117">
-          <caret line="43" column="92" selection-start-line="43" selection-start-column="92" selection-end-line="43" selection-end-column="92" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/controller/RelacionComponenteController.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="236">
+        <state relative-caret-position="1020">
           <caret line="74" column="46" selection-start-line="74" selection-start-column="46" selection-end-line="74" selection-end-column="46" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/controller/InicioAsistenteActualizacionController.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/controller/ProcesoActualizacionController.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="168">
-          <caret line="41" column="55" lean-forward="true" selection-start-line="41" selection-start-column="55" selection-end-line="41" selection-end-column="55" />
+        <state relative-caret-position="-4269">
+          <caret line="138" column="60" lean-forward="true" selection-start-line="138" selection-start-column="60" selection-end-line="138" selection-end-column="60" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/controller/task/IniciarServicioTask.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="646">
+          <caret line="41" column="37" selection-start-line="41" selection-start-column="37" selection-end-line="41" selection-end-column="37" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/controller/task/ActualizarServicioTask.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="356">
+          <caret line="24" column="70" selection-start-line="24" selection-start-column="70" selection-end-line="24" selection-end-column="70" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/controller/task/RespaldarServicioTask.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="884">
+          <caret line="60" column="13" lean-forward="true" selection-start-line="60" selection-start-column="13" selection-end-line="60" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/view/inicioAsistenteActualizacion.fxml">
+      <provider editor-type-id="JavaFX-Scene-Builder" />
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="99">
+          <caret line="44" column="119" selection-start-line="44" selection-start-column="119" selection-end-line="44" selection-end-column="119" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/log4j.properties">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="17">
+          <caret line="10" column="25" lean-forward="true" selection-start-line="10" selection-start-column="25" selection-end-line="10" selection-end-column="25" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/util/util.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="238">
+          <caret line="14" column="1" lean-forward="true" selection-start-line="14" selection-start-column="1" selection-end-line="14" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/log4j/log4j/1.2.17/log4j-1.2.17.jar!/org/apache/log4j/Logger.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="102">
+          <caret line="9" column="13" selection-start-line="9" selection-start-column="13" selection-end-line="9" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://C:/Program Files/Java/jdk1.8.0_181/src.zip!/java/lang/Integer.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="112">
+          <caret line="764" column="26" selection-start-line="764" selection-start-column="26" selection-end-line="764" selection-end-column="26" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="153">
+          <caret line="36" column="20" selection-start-line="36" selection-start-column="20" selection-end-line="36" selection-end-column="20" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://C:/Program Files/Java/jdk1.8.0_181/src.zip!/java/util/Collections.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="26">
+          <caret line="373" column="23" selection-start-line="373" selection-start-column="23" selection-end-line="373" selection-end-column="23" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/junit/junit/4.12/junit-4.12.jar!/org/junit/internal/runners/model/ReflectiveCallable.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="204">
+          <caret line="15" selection-start-line="15" selection-end-line="15" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/junit/junit/4.12/junit-4.12.jar!/org/junit/runners/model/FrameworkMethod.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="89">
+          <caret line="31" selection-start-line="31" selection-end-line="31" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/util/UtilitarioTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="38">
+          <caret line="5" column="22" lean-forward="true" selection-start-line="5" selection-start-column="22" selection-end-line="5" selection-end-column="22" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/controller/ProcesoActualizacionController.java">
+    <entry file="jar://C:/Program Files/Java/jdk1.8.0_181/src.zip!/java/lang/String.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="117">
-          <caret line="138" column="60" lean-forward="true" selection-start-line="138" selection-start-column="60" selection-end-line="138" selection-end-column="60" />
+        <state relative-caret-position="89">
+          <caret line="110" column="19" selection-start-line="110" selection-start-column="19" selection-end-line="110" selection-end-column="19" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/controller/task/ActualizarServicioTask.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/util/Constantes.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="117">
-          <caret line="24" column="70" selection-start-line="24" selection-start-column="70" selection-end-line="24" selection-end-column="70" />
+        <state relative-caret-position="1483">
+          <caret line="102" column="112" lean-forward="true" selection-start-line="102" selection-start-column="112" selection-end-line="102" selection-end-column="112" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/controller/task/IniciarServicioTask.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/util/Utilitario.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="296">
-          <caret line="41" column="37" selection-start-line="41" selection-start-column="37" selection-end-line="41" selection-end-column="37" />
+        <state relative-caret-position="320">
+          <caret line="361" column="24" selection-start-line="361" selection-start-column="24" selection-end-line="361" selection-end-column="24" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/controller/InicioAsistenteActualizacionController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="136">
+          <caret line="58" column="45" selection-start-line="58" selection-start-column="45" selection-end-line="58" selection-end-column="45" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>

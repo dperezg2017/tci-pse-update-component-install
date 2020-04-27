@@ -36,16 +36,17 @@
       </Label>
       <Label layoutX="198.0" layoutY="133.0" text="Version instalada:">
       </Label>
-      <Label layoutX="176.0" layoutY="256.0" text="Para continuar con la instalación haga clic en &quot;Siguiente&quot; para continuar.">
+      <Label fx:id="lblmsjInicioAsistenteActualizacion" layoutX="176.0" layoutY="256.0" text="Para continuar haga clic en &quot;Siguiente&quot; para continuar.">
          <font>
             <Font size="11.0" />
-         </font></Label>
+         </font>
+      </Label>
       <Line endX="430.0" layoutX="121.0" layoutY="333.0" startX="-114.5" AnchorPane.leftAnchor="3.0" AnchorPane.rightAnchor="3.0" />
        <Button fx:id="btnIrRelacionComponente" layoutX="329.0" layoutY="348.0" mnemonicParsing="false" onAction="#irRelacionComponente_button" text="Siguiente &gt; " />
        <Button fx:id="btnExit" layoutX="444.0" layoutY="348.0" mnemonicParsing="false" onAction="#Exit_button" prefHeight="25.0" prefWidth="81.0" text="Cancelar" />
       <Label layoutX="198.0" layoutY="183.0" text="Vérsion a instalar : ">
       </Label>
-      <Label fx:id="lblversionInstalador" layoutX="341.0" layoutY="132.0" text="lblversionInstalador" />
-      <Label fx:id="lblversionActualizador" layoutX="340.0" layoutY="184.0" text="lblversion||dor" />
+      <Label fx:id="lblversionInstalada" layoutX="341.0" layoutY="132.0" text="lblversionInstalada" />
+      <Label fx:id="lblversionInstalar" layoutX="340.0" layoutY="184.0" text="lblversionInstalar" />
    </children>
 </AnchorPane>
