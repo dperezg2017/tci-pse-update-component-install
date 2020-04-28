@@ -1,0 +1,12 @@
+{
+  "type": "service_account",
+  "project_id": "tci-microservices-262022",
+  "private_key_id": "67b0ad07806afe669e47266bea9b744c4f86ad1c",
+  "private_key": "-----BEGIN PRIVATE KEY-----\nMIIEvgIBADANBgkqhkiG9w0BAQEFAASCBKgwggSkAgEAAoIBAQDA/7JJ78fO1103\ncXNDJwo9MRx0s5tVhOfaVz35FTIKafdFtbbJrzfrMF6Cf0p1Is/FCVzDSVKuOTza\nYBUS4J2hJ689Xlr24kMqeNqKuixEBQa9cnSxaBkmQ95PufOw4w6p23qSR5WgPlhO\naXjSLSCX+B3Ov/d3SlYmhxaDjfyVq6RIulrD1TdA31hLhBNJVH5qQPnJw9A1IaEb\nt93BL1gZeZG1BC9zFdvhsPE581c5YdNrd86SbZxCx2MZJhWUAdE+Gmts49HVW1Wm\nDR6ZM6qLrdDtCGjSYL/aLmf44hFGqUZTE5gb9b8GIrJAKkZIklGvKQGxTsHj+rJ/\nxiQ9qaTdAgMBAAECggEAKm17vQ/KodDMBAZ7g4l3UYT0n74lOYtmaeQwckvDzLDH\nZIqCRLuxhBFF0ZPYo0AUI1l/zEmX9MeN9mbVcykwVe9ysX/G6QvMHq/jQUiUtx5Q\nwUCCYUbEcppMasPzC9GalWIzw6kbflb+VDyRDElR5z6rFNq0NQQBROaBH0oNOzyW\n9eMGpdkj9IDp69V2k54XdAWtqJwKKi3VDHz1t3E//m4Y+TFMzNot9j+qonCbspAB\naQHhGi8sznUnQwemr2Fc52nfFAyc3Tl2HPuUfq0Wuz3Ew2LZnqUL8WTac14G3Jtz\nbA/c+lcoOc8/AfIv2RpQnSv1YlSry+L6LlQyX0pOSQKBgQDj+Am9oLbkffZAKyjS\nSurJKi3JvjQ8xTM7vRx7/pI7H3BhBMd6NXGzfYhhVtjk1+kooKduKZ60BfuvVN43\ndmD4IJmUsqqNLm8oSu/b3styxvmMpqvj9jYVpd797bxK0GEA9ir3DUGPdmMJ1vZY\nR6xI+QdUvRZYd7DD43XhudYBtQKBgQDYuuBt20dEI7aHqVD0ON1tH+Ssrxe/Nzsf\nR3aA43SfpBvQSrOAanD28kDmB02QtqtXBDPAVDEDdPxkz+YOJzj+PQHIa6WDU1q6\nlWWmugF9Lk8L5WLQQNZj4p8jCQ5BDkMwRENA//0l2xtVvza/7aAYtCGagTp3XtnH\nSGFSvhiviQKBgQCDqtMVbymzNv1ven4NV6/bmDzx9KV/I/a/Xi6Bfzs+Yp4pqvT7\npLqTDMIkVmDXa80C5idN/UPofjwrvDzMk9bV+R47QCY5fMQ+5Wk7+KZRGJMxpWJK\nO/5o6nCtAQ5rt4cPYx7VqhZfoeT53epSerMLQqn1S3EIj7jMqyd+xDLSsQKBgQCw\nL7NU+0bDKPkw7b8G2td+58eBblGyu9aPRgwbGU1snf+SY7fq9BzjU+rYVSWEOEuv\n0JW1i3vQ4KBx3+SYquAVJkk1wfTqfq+qMNtTH7EoL6ZI+HBM9fiTeN5/n9P7pPmP\n2l6GD9SemrFtEqYSfr2Ad6c9sEJ0WiJWdAvSNQFiaQKBgGCWuUOYjDO7gKuRw/1e\nuL9OBPyZImMHQokk2Q29S5Sel7QoPtAytKX91nKmaPpAVw7FZZEJHNgxWIokwavd\nVfLU8MfX1oLJENDSFkut07fJ/Io0lwyaEPhP77ALR851H83RoeS+KNHpJI/kfo38\nl78m8iOSSwe9UpTIQJC7w2a7\n-----END PRIVATE KEY-----\n",
+  "client_email": "service-account-uc-141@tci-microservices-262022.iam.gserviceaccount.com",
+  "client_id": "104603863319723025037",
+  "auth_uri": "https://accounts.google.com/o/oauth2/auth",
+  "token_uri": "https://oauth2.googleapis.com/token",
+  "auth_provider_x509_cert_url": "https://www.googleapis.com/oauth2/v1/certs",
+  "client_x509_cert_url": "https://www.googleapis.com/robot/v1/metadata/x509/service-account-uc-141%40tci-microservices-262022.iam.gserviceaccount.com"
+}

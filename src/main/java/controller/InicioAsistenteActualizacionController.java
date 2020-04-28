@@ -48,7 +48,7 @@ public class InicioAsistenteActualizacionController {
         lblmsjInicioAsistenteActualizacion.setText(msjInicioAsistenteActualizacion);
     }
 
-    public void irRelacionComponente_button(ActionEvent event) throws IOException {
+    public void irRelacionComponente_button() throws IOException {
 
         String mensaje=msjInicioAsistenteActualizacion(this.versionInstalada(),this.versionInstalar());
 
@@ -56,11 +56,14 @@ public class InicioAsistenteActualizacionController {
             Alert alert = new Alert(Alert.AlertType.ERROR, mensaje, ButtonType.OK);
             alert.showAndWait();
             if (alert.getResult() == ButtonType.OK) {
-                logger.info("LE DISTE ACEPTAR");
+                logger.warn(constante.MSJ_IAA_VERSION_MAYOR_IGUAL);
             }
         }else if(mensaje.equalsIgnoreCase(constante.MSJ_IAA_VERSION_ERROR)){
             Alert alert = new Alert(Alert.AlertType.WARNING, mensaje, ButtonType.OK);
             alert.showAndWait();
+            if (alert.getResult() == ButtonType.OK) {
+                logger.warn(constante.MSJ_IAA_VERSION_ERROR);
+            }
         }
 
     }
