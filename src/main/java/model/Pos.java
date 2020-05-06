@@ -1,14 +1,13 @@
 package model;
-/**
- * @author: Deyviz Perez
- * @version: 1.0
- * **/
+
 public class Pos {
 
     String descripcion;
     String estado;
-    String ubicacion;
-    String ubicacionActualizador;
+    String rutaServicioInstalado;
+    String multiemisor;
+    String funcionalidad;
+    String rutaServicioInstalar;
 
     public String getDescripcion() {
         return descripcion;
@@ -26,26 +25,44 @@ public class Pos {
         this.estado = estado;
     }
 
-    public String getUbicacion() {
-        return ubicacion;
+    public String getRutaServicioInstalado() {
+        return rutaServicioInstalado;
     }
 
-    public void setUbicacion(String ubicacion) {
-        this.ubicacion = ubicacion;
+    public void setRutaServicioInstalado(String rutaServicioInstalado) {
+        this.rutaServicioInstalado = rutaServicioInstalado;
     }
 
-    public String getUbicacionActualizador() {
-        return ubicacionActualizador;
+    public String getFuncionalidad() {
+        return funcionalidad;
     }
 
-    public void setUbicacionActualizador(String ubicacionActualizador) {
-        this.ubicacionActualizador = ubicacionActualizador;
+    public void setFuncionalidad(String funcionalidad) {
+        this.funcionalidad = funcionalidad;
     }
 
-    public Pos(String descripcion, String estado, String ubicacion, String ubicacionActualizador) {
+    public String getRutaServicioInstalar() {
+        return rutaServicioInstalar;
+    }
+
+    public void setRutaServicioInstalar(String rutaServicioInstalar) {
+        this.rutaServicioInstalar = rutaServicioInstalar;
+    }
+
+    public String getMultiemisor() {
+        return multiemisor;
+    }
+
+    public void setMultiemisor(String multiemisor) {
+        this.multiemisor = multiemisor;
+    }
+
+    public Pos(String descripcion, String estado, String rutaServicioInstalado, String multiemisor, String funcionalidad, String rutaServicioInstalar) {
         this.descripcion = descripcion;
         this.estado = estado;
-        this.ubicacion = ubicacion;
-        this.ubicacionActualizador = ubicacionActualizador;
+        this.rutaServicioInstalado = rutaServicioInstalado;
+        this.multiemisor = multiemisor;
+        this.funcionalidad = funcionalidad;
+        this.rutaServicioInstalar = rutaServicioInstalar;
     }
 }

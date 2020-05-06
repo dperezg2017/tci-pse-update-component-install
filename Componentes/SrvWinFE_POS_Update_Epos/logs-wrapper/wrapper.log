@@ -1,18 +1,107 @@
-STATUS | wrapperm | 2020/04/22 21:45:28 | SrvWinFE - POS Modulo Servidor service installed.
-STATUS | wrapper  | 2020/04/22 21:56:39 | --> Wrapper Started as Service
-STATUS | wrapper  | 2020/04/22 21:56:39 | Java Service Wrapper Community Edition 32-bit 3.5.26
-STATUS | wrapper  | 2020/04/22 21:56:39 |   Copyright (C) 1999-2014 Tanuki Software, Ltd. All Rights Reserved.
-STATUS | wrapper  | 2020/04/22 21:56:39 |     http://wrapper.tanukisoftware.com
-STATUS | wrapper  | 2020/04/22 21:56:39 | 
-STATUS | wrapper  | 2020/04/22 21:56:39 | Launching a JVM...
-INFO   | jvm 1    | 2020/04/22 21:56:40 | WrapperManager: Initializing...
-STATUS | wrapper  | 2020/04/23 01:15:24 | Machine is shutting down.
-STATUS | wrapper  | 2020/04/23 01:15:26 | <-- Wrapper Stopped
-STATUS | wrapper  | 2020/04/23 08:32:13 | --> Wrapper Started as Service
-STATUS | wrapper  | 2020/04/23 08:32:13 | Java Service Wrapper Community Edition 32-bit 3.5.26
-STATUS | wrapper  | 2020/04/23 08:32:13 |   Copyright (C) 1999-2014 Tanuki Software, Ltd. All Rights Reserved.
-STATUS | wrapper  | 2020/04/23 08:32:13 |     http://wrapper.tanukisoftware.com
-STATUS | wrapper  | 2020/04/23 08:32:13 | 
-STATUS | wrapper  | 2020/04/23 08:32:14 | Launching a JVM...
-INFO   | jvm 1    | 2020/04/23 08:32:14 | WrapperManager: Initializing...
-STATUS | wrapper  | 2020/04/23 10:27:44 | <-- Wrapper Stopped
+STATUS | wrapperm | 2020/05/04 09:02:14 | SrvWinFE - POS Update Epos service installed.
+STATUS | wrapper  | 2020/05/04 09:02:15 | --> Wrapper Started as Service
+STATUS | wrapper  | 2020/05/04 09:02:15 | Java Service Wrapper Community Edition 32-bit 3.5.26
+STATUS | wrapper  | 2020/05/04 09:02:15 |   Copyright (C) 1999-2014 Tanuki Software, Ltd. All Rights Reserved.
+STATUS | wrapper  | 2020/05/04 09:02:15 |     http://wrapper.tanukisoftware.com
+STATUS | wrapper  | 2020/05/04 09:02:15 | 
+STATUS | wrapper  | 2020/05/04 09:02:15 | Launching a JVM...
+INFO   | jvm 1    | 2020/05/04 09:02:16 | WrapperManager: Initializing...
+INFO   | jvm 1    | 2020/05/04 09:02:16 | WrapperManager: 
+INFO   | jvm 1    | 2020/05/04 09:02:16 | WrapperManager: WARNING - Unable to load the Wrapper's native library 'wrapper.dll'.
+INFO   | jvm 1    | 2020/05/04 09:02:16 | WrapperManager:           The file is located on the path at the following location but
+INFO   | jvm 1    | 2020/05/04 09:02:16 | WrapperManager:           could not be loaded:
+INFO   | jvm 1    | 2020/05/04 09:02:16 | WrapperManager:             D:\Deyviz Perez\Proyectos\tci-pse-update-component-install\v1.0.0.0\componentes\SrvWinFE_POS_Update_Epos\bin\..\lib\wrapper.dll
+INFO   | jvm 1    | 2020/05/04 09:02:16 | WrapperManager:           Please verify that the file is both readable and executable by the
+INFO   | jvm 1    | 2020/05/04 09:02:16 | WrapperManager:           current user and that the file has not been corrupted in any way.
+INFO   | jvm 1    | 2020/05/04 09:02:16 | WrapperManager:           One common cause of this problem is running a 32-bit version
+INFO   | jvm 1    | 2020/05/04 09:02:16 | WrapperManager:           of the Wrapper with a 64-bit version of Java, or vica versa.
+INFO   | jvm 1    | 2020/05/04 09:02:16 | WrapperManager:           This is a 64-bit JVM.
+INFO   | jvm 1    | 2020/05/04 09:02:16 | WrapperManager:           Reported cause:
+INFO   | jvm 1    | 2020/05/04 09:02:16 | WrapperManager:             D:\Deyviz Perez\Proyectos\tci-pse-update-component-install\v1.0.0.0\componentes\SrvWinFE_POS_Update_Epos\lib\wrapper.dll: Can't load IA 32-bit .dll on a AMD 64-bit platform
+INFO   | jvm 1    | 2020/05/04 09:02:16 | WrapperManager:           System signals will not be handled correctly.
+INFO   | jvm 1    | 2020/05/04 09:02:16 | WrapperManager: 
+STATUS | wrapperm | 2020/05/04 10:27:30 | Service is running.  Stopping it...
+INFO   | jvm 1    | 2020/05/04 10:27:32 | Java HotSpot(TM) 64-Bit Server VM warning: ignoring option MaxPermSize=256m; support was removed in 8.0
+STATUS | wrapper  | 2020/05/04 10:27:32 | <-- Wrapper Stopped
+STATUS | wrapperm | 2020/05/04 10:27:34 | SrvWinFE - POS Update Epos stopped.
+STATUS | wrapperm | 2020/05/04 10:27:34 | SrvWinFE - POS Update Epos service removed.
+STATUS | wrapperm | 2020/05/04 12:51:22 | SrvWinFE - POS Update Epos service installed.
+STATUS | wrapper  | 2020/05/04 12:51:22 | --> Wrapper Started as Service
+STATUS | wrapper  | 2020/05/04 12:51:22 | Java Service Wrapper Community Edition 32-bit 3.5.26
+STATUS | wrapper  | 2020/05/04 12:51:22 |   Copyright (C) 1999-2014 Tanuki Software, Ltd. All Rights Reserved.
+STATUS | wrapper  | 2020/05/04 12:51:22 |     http://wrapper.tanukisoftware.com
+STATUS | wrapper  | 2020/05/04 12:51:22 | 
+STATUS | wrapper  | 2020/05/04 12:51:23 | Launching a JVM...
+INFO   | jvm 1    | 2020/05/04 12:51:23 | WrapperManager: Initializing...
+INFO   | jvm 1    | 2020/05/04 12:51:23 | WrapperManager: 
+INFO   | jvm 1    | 2020/05/04 12:51:23 | WrapperManager: WARNING - Unable to load the Wrapper's native library 'wrapper.dll'.
+INFO   | jvm 1    | 2020/05/04 12:51:23 | WrapperManager:           The file is located on the path at the following location but
+INFO   | jvm 1    | 2020/05/04 12:51:23 | WrapperManager:           could not be loaded:
+INFO   | jvm 1    | 2020/05/04 12:51:23 | WrapperManager:             D:\Deyviz Perez\Proyectos\tci-pse-update-component-install\v1.0.0.0\componentes\instalador\bin\..\lib\wrapper.dll
+INFO   | jvm 1    | 2020/05/04 12:51:23 | WrapperManager:           Please verify that the file is both readable and executable by the
+INFO   | jvm 1    | 2020/05/04 12:51:23 | WrapperManager:           current user and that the file has not been corrupted in any way.
+INFO   | jvm 1    | 2020/05/04 12:51:23 | WrapperManager:           One common cause of this problem is running a 32-bit version
+INFO   | jvm 1    | 2020/05/04 12:51:23 | WrapperManager:           of the Wrapper with a 64-bit version of Java, or vica versa.
+INFO   | jvm 1    | 2020/05/04 12:51:23 | WrapperManager:           This is a 64-bit JVM.
+INFO   | jvm 1    | 2020/05/04 12:51:23 | WrapperManager:           Reported cause:
+INFO   | jvm 1    | 2020/05/04 12:51:23 | WrapperManager:             D:\Deyviz Perez\Proyectos\tci-pse-update-component-install\v1.0.0.0\componentes\instalador\lib\wrapper.dll: Can't load IA 32-bit .dll on a AMD 64-bit platform
+INFO   | jvm 1    | 2020/05/04 12:51:23 | WrapperManager:           System signals will not be handled correctly.
+INFO   | jvm 1    | 2020/05/04 12:51:23 | WrapperManager: 
+FATAL  | wrapperm | 2020/05/04 12:52:56 | Failed to obtain elevated status. (1223): El usuario ha cancelado la operación. (0x4c7)
+STATUS | wrapperm | 2020/05/04 12:53:15 | Service is running.  Stopping it...
+INFO   | jvm 1    | 2020/05/04 12:53:16 | Java HotSpot(TM) 64-Bit Server VM warning: ignoring option MaxPermSize=256m; support was removed in 8.0
+STATUS | wrapper  | 2020/05/04 12:53:16 | <-- Wrapper Stopped
+STATUS | wrapperm | 2020/05/04 12:53:18 | SrvWinFE - POS Update Epos stopped.
+STATUS | wrapperm | 2020/05/04 12:53:18 | SrvWinFE - POS Update Epos service removed.
+STATUS | wrapperm | 2020/05/04 13:22:08 | SrvWinFE - POS Update Epos service installed.
+STATUS | wrapper  | 2020/05/04 13:22:09 | --> Wrapper Started as Service
+STATUS | wrapper  | 2020/05/04 13:22:09 | Java Service Wrapper Community Edition 32-bit 3.5.26
+STATUS | wrapper  | 2020/05/04 13:22:09 |   Copyright (C) 1999-2014 Tanuki Software, Ltd. All Rights Reserved.
+STATUS | wrapper  | 2020/05/04 13:22:09 |     http://wrapper.tanukisoftware.com
+STATUS | wrapper  | 2020/05/04 13:22:09 | 
+STATUS | wrapper  | 2020/05/04 13:22:09 | Launching a JVM...
+INFO   | jvm 1    | 2020/05/04 13:22:09 | WrapperManager: Initializing...
+INFO   | jvm 1    | 2020/05/04 13:22:09 | WrapperManager: 
+INFO   | jvm 1    | 2020/05/04 13:22:09 | WrapperManager: WARNING - Unable to load the Wrapper's native library 'wrapper.dll'.
+INFO   | jvm 1    | 2020/05/04 13:22:09 | WrapperManager:           The file is located on the path at the following location but
+INFO   | jvm 1    | 2020/05/04 13:22:09 | WrapperManager:           could not be loaded:
+INFO   | jvm 1    | 2020/05/04 13:22:09 | WrapperManager:             D:\Deyviz Perez\Proyectos\tci-pse-update-component-install\v1.0.0.0\componentes\instalador\bin\..\lib\wrapper.dll
+INFO   | jvm 1    | 2020/05/04 13:22:09 | WrapperManager:           Please verify that the file is both readable and executable by the
+INFO   | jvm 1    | 2020/05/04 13:22:09 | WrapperManager:           current user and that the file has not been corrupted in any way.
+INFO   | jvm 1    | 2020/05/04 13:22:09 | WrapperManager:           One common cause of this problem is running a 32-bit version
+INFO   | jvm 1    | 2020/05/04 13:22:09 | WrapperManager:           of the Wrapper with a 64-bit version of Java, or vica versa.
+INFO   | jvm 1    | 2020/05/04 13:22:09 | WrapperManager:           This is a 64-bit JVM.
+INFO   | jvm 1    | 2020/05/04 13:22:09 | WrapperManager:           Reported cause:
+INFO   | jvm 1    | 2020/05/04 13:22:09 | WrapperManager:             D:\Deyviz Perez\Proyectos\tci-pse-update-component-install\v1.0.0.0\componentes\instalador\lib\wrapper.dll: Can't load IA 32-bit .dll on a AMD 64-bit platform
+INFO   | jvm 1    | 2020/05/04 13:22:09 | WrapperManager:           System signals will not be handled correctly.
+INFO   | jvm 1    | 2020/05/04 13:22:09 | WrapperManager: 
+INFO   | jvm 1    | 2020/05/04 15:33:52 | Java HotSpot(TM) 64-Bit Server VM warning: ignoring option MaxPermSize=256m; support was removed in 8.0
+STATUS | wrapper  | 2020/05/04 15:33:53 | <-- Wrapper Stopped
+STATUS | wrapperm | 2020/05/04 15:36:04 | SrvWinFE - POS Update Epos service removed.
+STATUS | wrapperm | 2020/05/04 16:54:27 | SrvWinFE - POS Update Epos service installed.
+STATUS | wrapper  | 2020/05/04 16:54:27 | --> Wrapper Started as Service
+STATUS | wrapper  | 2020/05/04 16:54:27 | Java Service Wrapper Community Edition 32-bit 3.5.26
+STATUS | wrapper  | 2020/05/04 16:54:27 |   Copyright (C) 1999-2014 Tanuki Software, Ltd. All Rights Reserved.
+STATUS | wrapper  | 2020/05/04 16:54:27 |     http://wrapper.tanukisoftware.com
+STATUS | wrapper  | 2020/05/04 16:54:27 | 
+STATUS | wrapper  | 2020/05/04 16:54:27 | Launching a JVM...
+INFO   | jvm 1    | 2020/05/04 16:54:27 | WrapperManager: Initializing...
+INFO   | jvm 1    | 2020/05/04 16:54:27 | WrapperManager: 
+INFO   | jvm 1    | 2020/05/04 16:54:27 | WrapperManager: WARNING - Unable to load the Wrapper's native library 'wrapper.dll'.
+INFO   | jvm 1    | 2020/05/04 16:54:27 | WrapperManager:           The file is located on the path at the following location but
+INFO   | jvm 1    | 2020/05/04 16:54:27 | WrapperManager:           could not be loaded:
+INFO   | jvm 1    | 2020/05/04 16:54:27 | WrapperManager:             D:\Deyviz Perez\Proyectos\tci-pse-update-component-install\v1.0.0.0\componentes\SrvWinFE_POS_Update_Epos\bin\..\lib\wrapper.dll
+INFO   | jvm 1    | 2020/05/04 16:54:27 | WrapperManager:           Please verify that the file is both readable and executable by the
+INFO   | jvm 1    | 2020/05/04 16:54:27 | WrapperManager:           current user and that the file has not been corrupted in any way.
+INFO   | jvm 1    | 2020/05/04 16:54:27 | WrapperManager:           One common cause of this problem is running a 32-bit version
+INFO   | jvm 1    | 2020/05/04 16:54:27 | WrapperManager:           of the Wrapper with a 64-bit version of Java, or vica versa.
+INFO   | jvm 1    | 2020/05/04 16:54:27 | WrapperManager:           This is a 64-bit JVM.
+INFO   | jvm 1    | 2020/05/04 16:54:27 | WrapperManager:           Reported cause:
+INFO   | jvm 1    | 2020/05/04 16:54:27 | WrapperManager:             D:\Deyviz Perez\Proyectos\tci-pse-update-component-install\v1.0.0.0\componentes\SrvWinFE_POS_Update_Epos\lib\wrapper.dll: Can't load IA 32-bit .dll on a AMD 64-bit platform
+INFO   | jvm 1    | 2020/05/04 16:54:27 | WrapperManager:           System signals will not be handled correctly.
+INFO   | jvm 1    | 2020/05/04 16:54:27 | WrapperManager: 
+STATUS | wrapperm | 2020/05/04 17:31:17 | Service is running.  Stopping it...
+INFO   | jvm 1    | 2020/05/04 17:31:18 | Java HotSpot(TM) 64-Bit Server VM warning: ignoring option MaxPermSize=256m; support was removed in 8.0
+STATUS | wrapper  | 2020/05/04 17:31:18 | <-- Wrapper Stopped
+STATUS | wrapperm | 2020/05/04 17:31:20 | SrvWinFE - POS Update Epos stopped.
+STATUS | wrapperm | 2020/05/04 17:31:20 | SrvWinFE - POS Update Epos service removed.

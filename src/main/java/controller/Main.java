@@ -1,5 +1,11 @@
 package controller;
 
+import controller.actualizacion.ActualizacionProcesoActualizacionController;
+import controller.actualizacion.ActualizacionRelacionComponenteController;
+import controller.actualizacion.ActualizacionResultadoActualizacionController;
+import controller.instalacion.InstalacionProcesoActualizacionController;
+import controller.instalacion.InstalacionRelacionComponenteController;
+import controller.instalacion.InstalacionResultadoActualizacionController;
 import javafx.application.Application;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Parent;
@@ -25,8 +31,7 @@ public class Main extends Application implements Serializable {
 
             logger.info("Inicio del Actualizador - ePos");
         }catch (Exception e){
-            e.printStackTrace();
-            logger.error(e);
+            logger.error("Ocurrio un error al iniciar el cargar la configuracion de LOG: ",e);
         }
     }
 
@@ -35,99 +40,99 @@ public class Main extends Application implements Serializable {
         try {
             inicioAsistenteActualizacion();
         } catch(Exception e) {
-            e.printStackTrace();
-            logger.error(e);
+            logger.error("Ocurrio un error al iniciar la primera pantalla: ",e);
         }
     }
 
     public void inicioAsistenteActualizacion() {
         FXMLLoader loader;
         try {
-            loader = new_stage2("/view/inicioAsistenteActualizacion.fxml");
+            loader = new_stage2("/view/InicioAsistenteActualizacion.fxml");
             InicioAsistenteActualizacionController inicioAsistenteActualizacionController = loader.getController();
             inicioAsistenteActualizacionController.setApp(this);
         } catch (Exception e) {
-            logger.error("Ocurrio un error al iniciar el asistente de actualizacion :",e);
+            logger.error("Ocurrio un error al cargar la pantalla de 'inicio asistente actualizacion' :",e);
         }
     }
 
-    public void procesoActualizacion() {
+    public void actualizacionRelacionComponente() {
         FXMLLoader loader;
         try {
-//            loader = new_stage("view/procesoActualizacion.fxml");
-//            URL url = Loader.getResource("procesoActualizacion.fxml");
-//            loader = new_stage(url);
-            loader = new_stage2("/view/procesoActualizacion.fxml");
-            ProcesoActualizacionController procesoActualizacionController = loader.getController();
-            procesoActualizacionController.setApp(this);
+            loader = new_stage2("/view/actualizacion/ActualizacionRelacionComponente.fxml");
+                ActualizacionRelacionComponenteController actualizacionRelacionComponenteController = loader.getController();
+            actualizacionRelacionComponenteController.setApp(this);
         } catch (Exception e) {
-            e.printStackTrace();
+            logger.error("Ocurrio un error al cargar la pantalla de 'actualizacion relacion componente' :",e);
+        }
+    }
+    public void instalacionRelacionComponente() {
+        FXMLLoader loader;
+        try {
+            loader = new_stage2("/view/instalacion/InstalacionRelacionComponente.fxml");
+            InstalacionRelacionComponenteController instalacionRelacionComponenteController = loader.getController();
+            instalacionRelacionComponenteController.setApp(this);
+        } catch (Exception e) {
+            logger.error("Ocurrio un error al cargar la pantalla de 'instalacion relacion componente' :",e);
             logger.error(e);
         }
     }
 
-    public void relacionComponente() {
+    public void actualizacionProcesoActualizacion() {
         FXMLLoader loader;
         try {
-//            loader = new_stage("view/relacionComponente.fxml");
-//            URL url = Loader.getResource("relacionComponente.fxml");
-//            loader = new_stage(url);
-            loader = new_stage2("/view/relacionComponente.fxml");
-            RelacionComponenteController relacionComponenteController = loader.getController();
-            relacionComponenteController.setApp(this);
+            loader = new_stage2("/view/actualizacion/ActualizacionProcesoActualizacion.fxml");
+            ActualizacionProcesoActualizacionController actualizacionProcesoActualizacionController = loader.getController();
+            actualizacionProcesoActualizacionController.setApp(this);
         } catch (Exception e) {
-            e.printStackTrace();
+            logger.error("Ocurrio un error al cargar la pantalla de 'actualizacion proceso actualizacion' :",e);
             logger.error(e);
         }
     }
 
-    public void resultadoActualizacion() {
+    public void instalacionProcesoActualizacion() {
         FXMLLoader loader;
         try {
-//            loader = new_stage("view/resultadoActualizacion.fxml");
-//            URL url = Loader.getResource("resultadoActualizacion.fxml");
-//            loader = new_stage(url);
-            loader = new_stage2("/view/resultadoActualizacion.fxml");
-            ResultadoActualizacionController resultadoActualizacionController = loader.getController();
-            resultadoActualizacionController.setApp(this);
-           logger.info("Fin del Actualizador - ePos");
+            loader = new_stage2("/view/instalacion/InstalacionProcesoActualizacion.fxml");
+            InstalacionProcesoActualizacionController instalacionProcesoActualizacionController = loader.getController();
+            instalacionProcesoActualizacionController.setApp(this);
         } catch (Exception e) {
-            e.printStackTrace();
+            logger.error("Ocurrio un error al cargar la pantalla de 'instalacion proceso actualizacion' :",e);
             logger.error(e);
         }
     }
 
-
-//    public FXMLLoader new_stage(String fxml) throws Exception {
-public FXMLLoader new_stage(URL fxml) throws Exception {
-        Stage stage = new Stage();
-        stage.setTitle("copyright (©) - Transporte Confidencial de Información");
-        //FXMLLoader loader = new FXMLLoader(getClass().getResource(fxml));
-        FXMLLoader loader = new FXMLLoader(fxml);
-        root = (Parent) loader.load();
-        stage.setScene(new Scene(root));
-        stage.show();
-//        stage.setOnCloseRequest( event -> {try {
-//            this.getSystem().serialize();
-//        } catch (IOException e) {
-//            e.printStackTrace();
-//        };} );
-        return loader;
+    public void actualiacionResultadoActualizacion() {
+        FXMLLoader loader;
+        try {
+            loader = new_stage2("/view/actualizacion/ActualizacionResultadoActualizacion.fxml");
+            ActualizacionResultadoActualizacionController actualizacionResultadoActualizacionController = loader.getController();
+            actualizacionResultadoActualizacionController.setApp(this);
+        } catch (Exception e) {
+            logger.error("Ocurrio un error al cargar la pantalla de 'actualizacion resultado actualizacion' :",e);
+            logger.error(e);
+        }
     }
+
+    public void instalacionResultadoActualizacion() {
+        FXMLLoader loader;
+        try {
+            loader = new_stage2("/view/instalacion/InstalacionResultadoActualizacion.fxml");
+            InstalacionResultadoActualizacionController instalacionResultadoActualizacionController = loader.getController();
+            instalacionResultadoActualizacionController.setApp(this);
+        } catch (Exception e) {
+            logger.error("Ocurrio un error al cargar la pantalla de 'instalacion resultado actualizacion' :",e);
+            logger.error(e);
+        }
+    }
+
 
     public FXMLLoader new_stage2(String fxml) throws Exception {
         Stage stage = new Stage();
         stage.setTitle("copyright (©) - Transporte Confidencial de Información");
-        //FXMLLoader loader = new FXMLLoader(InicioAsistenteActualizacionController.class.getClassLoader().getResource(fxml));
           FXMLLoader loader = new FXMLLoader(getClass().getResource(fxml));
         root = (Parent) loader.load();
         stage.setScene(new Scene(root));
         stage.show();
-//        stage.setOnCloseRequest( event -> {try {
-//            this.getSystem().serialize();
-//        } catch (IOException e) {
-//            e.printStackTrace();
-//        };} );
         return loader;
     }
 

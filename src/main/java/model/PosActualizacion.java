@@ -1,10 +1,7 @@
 package model;
 
 import javafx.scene.image.ImageView;
-/**
- * @author: Deyviz Perez
- * @version: 1.0
- * **/
+
 public class PosActualizacion {
 
     String nombre;

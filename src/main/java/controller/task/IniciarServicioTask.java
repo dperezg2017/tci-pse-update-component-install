@@ -1,50 +1,35 @@
 package controller.task;
+import org.apache.log4j.Logger;
 import util.Constantes;
 import util.Utilitario;
 
 import java.io.IOException;
 
-/**
- * @author: Deyviz Perez
- * @version: 1.0
- * **/
 public class IniciarServicioTask {
 
+    Logger logger = Logger.getLogger(IniciarServicioTask.class);
     Utilitario utilitario = new Utilitario();
     Constantes constante = new Constantes();
 
+    public int iniciarServicio()  {
 
+        try {
+            utilitario.ejecutarComandoCMD(constante.CMD_NET_START_POS_UPDATE_EPOS);
 
-    public Boolean iniciarPrintmanager() throws IOException {
-        utilitario.ejecutarComandoCMD(constante.CMD_NET_START_PRINTMANAGER);
-        if (utilitario.conocerStatusServicioPOS(constante.SERVICIO_POS_PRINTMANAGER).equalsIgnoreCase(constante.SERVICIO_POS_INICIADO)) {
-            return true;
+            String estado = utilitario.obtenerEstadoServicio();
+            if (estado.contains(constante.SERVICIO_POS_DETENIDO)) {
+                return 0;
+            }else if(estado.contains(constante.SERVICIO_POS_INICIADO)){
+                return 1;
+            }else{
+                return -1;
+            }
+        } catch (Exception e) {
+            logger.error("Ocurrio un error al detener el servicio:",e);
+            return -2;
         }
-        return false;
     }
 
-    public Boolean iniciarBD() throws IOException {
-        utilitario.ejecutarComandoCMD(constante.CMD_NET_START_BD);
-        if (utilitario.conocerStatusServicioPOS(constante.SERVICIO_POS_BD).equalsIgnoreCase(constante.SERVICIO_POS_INICIADO)) {
-            return true;
-        }
-        return false;
-    }
-    public Boolean iniciarServidorPos() throws IOException {
-        utilitario.ejecutarComandoCMD(constante.CMD_NET_START_POS_SERVER);
-        if (utilitario.conocerStatusServicioPOS(constante.SERVICIO_POS_SERVER).equalsIgnoreCase(constante.SERVICIO_POS_INICIADO)) {
-            return true;
-        }
-        return false;
-    }
-
-    public Boolean iniciarCliente() throws IOException {
-        utilitario.ejecutarComandoCMD(constante.CMD_NET_START_CLIENTE);
-        if (utilitario.conocerStatusServicioPOS(constante.SERVICIO_POS_CLIENTE).equalsIgnoreCase(constante.SERVICIO_POS_INICIADO)) {
-            return true;
-        }
-        return false;
-    }
 
 
 }

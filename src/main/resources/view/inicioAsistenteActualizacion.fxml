@@ -42,8 +42,8 @@
          </font>
       </Label>
       <Line endX="430.0" layoutX="121.0" layoutY="333.0" startX="-114.5" AnchorPane.leftAnchor="3.0" AnchorPane.rightAnchor="3.0" />
-       <Button fx:id="btnIrRelacionComponente" layoutX="329.0" layoutY="348.0" mnemonicParsing="false" onAction="#irRelacionComponente_button" text="Siguiente &gt; " />
-       <Button fx:id="btnExit" layoutX="444.0" layoutY="348.0" mnemonicParsing="false" onAction="#Exit_button" prefHeight="25.0" prefWidth="81.0" text="Cancelar" />
+       <Button fx:id="btnIrRelacionComponente" layoutX="329.0" layoutY="348.0" mnemonicParsing="false" onAction="#irRelacionComponente" text="Siguiente &gt; " />
+       <Button fx:id="btnSalir" layoutX="444.0" layoutY="348.0" mnemonicParsing="false" onAction="#salir" prefHeight="25.0" prefWidth="81.0" text="Cancelar" />
       <Label layoutX="198.0" layoutY="183.0" text="Vérsion a instalar : ">
       </Label>
       <Label fx:id="lblversionInstalada" layoutX="341.0" layoutY="132.0" text="lblversionInstalada" />
